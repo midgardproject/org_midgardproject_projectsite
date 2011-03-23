@@ -1,0 +1,35 @@
+services_dispatcher: appserv
+providers_component: midgardmvc
+providers_hierarchy: midgard2
+development_mode: true
+components:
+    midgardmvc_core:
+        - {type: github, user: midgardproject, repository: midgardmvc_core, branch: master}
+    org_midgardproject_projectsite:
+        - {type: github, user: bergie, repository: org_midgardproject_projectsite, branch: master}
+    com_meego_planet:
+        - {type: github, user: nemein, repository: com_meego_planet, branch: master}
+    midgardmvc_ui_create:
+        - {type: github, user: bergie, repository: midgardmvc_ui_create, branch: master}
+nodes:
+    title: The Midgard Project
+    content: <p>The Midgard Project is...</p>
+    component: org_midgardproject_projectsite
+    children:
+        planet:
+            title: Planet Midgard
+            content: <p>Blogs from the Midgard community</p>
+            component: com_meego_planet
+attachmentserver_variants:
+    smallthumbnail:
+        scale:
+            width: 70
+            height: 70
+    thumbnail:
+        scale:
+            width: 142
+            height: 142
+    view:
+        scale:
+            width: 380
+            height: 380

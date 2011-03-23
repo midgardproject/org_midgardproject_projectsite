@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Schema xmlns="http://www.midgard-project.org/repligard/1.4">
+    <type name="org_midgardproject_projectsite_product" table="org_midgardproject_projectsite_product">
+        <user_values>
+            <typeof>doap:Project</typeof>
+            <namespaces>doap:http://usefulinc.com/ns/doap#</namespaces>
+        </user_values>
+        <property name="id" type="unsigned integer" primaryfield="id">
+            <description>Local non-replication-safe database identifier</description>
+        </property>
+        <property name="name" type="string" index="yes" />
+        <property name="title" type="string">
+            <property>doap:name</property>
+        </property>
+        <property name="category" type="string" index="yes">
+            <property>doap:category</property>
+        </property>
+        <property name="abstract" type="text">
+            <property>doap:shortdesc</property>
+        </property>
+        <property name="content" type="text">
+            <property>doap:description</property>
+        </property>
+    </type>
+   <type name="org_midgardproject_projectsite_document" table="org_midgardproject_projectsite_document" parent="org_midgardproject_projectsite_product">
+        <user_values>
+            <typeof>foaf:Document</typeof>
+            <namespaces>foaf:http://xmlns.com/foaf/0.1/,sioc:http://rdfs.org/sioc/ns#,dcterms:http://purl.org/dc/terms/</namespaces>
+        </user_values>
+        <property name="id" type="unsigned integer" primaryfield="id">
+            <description>Local non-replication-safe database identifier</description>
+        </property>
+        <property name="product" type="unsigned integer" link="org_midgardproject_projectsite_product:id" parentfield="product">
+            <property>foaf:primaryTopic</property>
+        </property>
+        <property name="title" type="string">
+            <property>dcterms:title</property>
+        </property>
+        <property name="content" type="text">
+            <property>doap:description</property>
+        </property>
+    </type>
+</Schema>
+
+

@@ -1,0 +1,14 @@
+<div tal:attributes="about current_component/product/rdfmapper/about; typeof current_component/product/rdfmapper/typeof">
+    <h1 tal:content="current_component/product/title" tal:attributes="property current_component/product/rdfmapper/title">The Midgard Project</h1>
+
+    <div tal:content="structure current_component/product/content" tal:attributes="property current_component/product/rdfmapper/content">
+        Product description
+    </div>
+    
+    <div tal:attributes="typeof current_component/documentation/typeof; mgd:baseurl request/uri">
+        <div tal:repeat="document current_component/documentation" tal:attributes="about document/rdfmapper/about; typeof document/rdfmapper/typeof">
+            <h2 tal:content="document/title" tal:attributes="property document/rdfmapper/title">Usage</h2>
+            <div tal:content="document/content" tal:attributes="property document/rdfmapper/content">Say &lt;?php echo "hello world"; ?&gt;</div>
+        </div>
+    </div>
+</div>

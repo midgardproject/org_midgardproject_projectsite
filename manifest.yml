@@ -1,0 +1,19 @@
+requires:
+    midgardmvc_ui_create:
+        - {type: github, user: bergie, repository: midgardmvc_ui_create, branch: master}
+    midgardmvc_helper_urlize:
+        - {type: github, user: bergie, repository: midgardmvc_helper_urlize, branch: master}
+process_injector: org_midgardproject_projectsite_injector
+routes:
+    index:
+        path: /
+        controller: org_midgardproject_projectsite_controllers_project
+        action: project
+        template_aliases:
+            content: omp-show-project
+    product:
+        path: /{$product}
+        controller: org_midgardproject_projectsite_controllers_product
+        action: product
+        template_aliases:
+            content: omp-show-product

@@ -1,0 +1,23 @@
+<div tal:attributes="about current_component/node/rdfmapper/about; typeof current_component/node/rdfmapper/typeof">
+    <h1 tal:content="current_component/node/title" tal:attributes="property current_component/node/rdfmapper/title">The Midgard Project</h1>
+
+    <div tal:content="structure current_component/node/content" tal:attributes="property current_component/node/rdfmapper/content">
+        Node content
+    </div>
+</div>
+
+<div class="stack">
+    <div tal:repeat="category current_component/categories" tal:attributes="class category/category">
+        <h2 tal:content="category/title">Web Framework</h2>
+        <ul tal:attributes="typeof category/products/typeof">
+            <li class="product" tal:repeat="product category/products" tal:attributes="about product/rdfmapper/about; typeof product/rdfmapper/typeof">
+                <div class="logo">
+                    <tal:block tal:content="structure php:midgardmvc_helper_attachmentserver_helpers::render_location_image(product, 'logo', 'smallthumbnail')" />
+                </div>
+                <h3><a tal:content="product/title" tal:attributes="href product/url; property product/rdfmapper/title">Midgard MVC</a></h3>
+                <p tal:content="product/abstract" tal:attributes="property product/rdfmapper/abstract">Elegant PHP framework</p>
+                <span property="doap:category" tal:attributes="content category/category" />
+            </li>
+        </ul>
+    </div>
+</div>
