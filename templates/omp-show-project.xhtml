@@ -4,19 +4,23 @@
     <div class="tagline" tal:content="structure project/abstract" tal:attributes="property project/rdfmapper/abstract">
         Tagline
     </div>
-</div>
 
-<div class="stack">
-    <div tal:repeat="category current_component/categories" tal:attributes="class category/category">
-        <h2 tal:content="category/title">Web Framework</h2>
-        <ul tal:attributes="typeof category/products/typeof; mgd:baseurl string:/${category/category}/">
-            <li class="product" tal:repeat="product category/products" tal:attributes="about product/rdfmapper/about; typeof product/rdfmapper/typeof">
-                <div class="logo">
-                    <tal:block tal:content="structure php:midgardmvc_helper_attachmentserver_helpers::render_location_image(product, 'logo', 'smallthumbnail')" />
-                </div>
-                <h3><a tal:content="product/title" tal:attributes="href product/url; property product/rdfmapper/title">Midgard MVC</a></h3>
-                <p tal:content="structure product/abstract" tal:attributes="property product/rdfmapper/abstract">Elegant PHP framework</p>
-            </li>
-        </ul>
+    <div class="stack">
+        <div tal:repeat="category current_component/categories" tal:attributes="class category/category">
+            <h2 tal:content="category/title">Web Framework</h2>
+            <ul tal:attributes="typeof category/products/typeof; mgd:baseurl string:/${category/category}/">
+                <li class="product" tal:repeat="product category/products" tal:attributes="about product/rdfmapper/about; typeof product/rdfmapper/typeof">
+                    <div class="logo">
+                        <tal:block tal:content="structure php:midgardmvc_helper_attachmentserver_helpers::render_location_image(product, 'logo', 'smallthumbnail')" />
+                    </div>
+                    <h3><a tal:content="product/title" tal:attributes="href product/url; property product/rdfmapper/title">Midgard MVC</a></h3>
+                    <p tal:content="structure product/abstract" tal:attributes="property product/rdfmapper/abstract">Elegant PHP framework</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div tal:content="structure project/content" tal:attributes="property project/rdfmapper/content">
+        More information about the project
     </div>
 </div>
