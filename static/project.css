@@ -30,7 +30,7 @@
     margin: 0px;
     margin-left: 1em;
     margin-bottom: 1em;
-    display: inline;
+    float: left;
     height: 100px;
     width: 300px;
 }
