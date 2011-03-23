@@ -27,6 +27,12 @@ class org_midgardproject_projectsite_controllers_product
     
     public static function get_product_by_name($name)
     {
+        if ($name == 'openpsa')
+        {
+            // Special handling as OpenPSA has its own site in its own domain
+            midgardmvc_core::get_instance()->head->relocate('http://openpsa2.org/');
+        }
+
         $q = new midgard_query_select
         (
             new midgard_query_storage('org_midgardproject_projectsite_product')
