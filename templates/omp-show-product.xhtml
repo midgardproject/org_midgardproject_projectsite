@@ -16,7 +16,7 @@
     <div tal:attributes="typeof current_component/documentation/typeof; mgd:baseurl request/uri">
         <div tal:repeat="document current_component/documentation" tal:attributes="about document/rdfmapper/about; typeof document/rdfmapper/typeof">
             <h2 tal:content="document/title" tal:attributes="property document/rdfmapper/title">Usage</h2>
-            <div tal:content="document/content" tal:attributes="property document/rdfmapper/content">Say &lt;?php echo "hello world"; ?&gt;</div>
+            <div tal:content="structure document/content" tal:attributes="property document/rdfmapper/content">Say &lt;?php echo "hello world"; ?&gt;</div>
         </div>
     </div>
 </div>
