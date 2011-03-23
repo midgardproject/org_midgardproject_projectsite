@@ -14,7 +14,10 @@
                         <tal:block tal:content="structure php:midgardmvc_helper_attachmentserver_helpers::render_location_image(product, 'logo', 'smallthumbnail')" />
                     </div>
                     <h3><a tal:content="product/title" tal:attributes="href product/url; property product/rdfmapper/title">Midgard MVC</a></h3>
-                    <p tal:content="structure product/abstract" tal:attributes="property product/rdfmapper/abstract">Elegant PHP framework</p>
+                    <p>
+                        <span tal:content="structure product/abstract" tal:attributes="property product/rdfmapper/abstract">Elegant PHP framework</span>
+                        <a tal:attributes="href product/url">&#187;</a>
+                    </p>
                 </li>
             </ul>
         </div>
