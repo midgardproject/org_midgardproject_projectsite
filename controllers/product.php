@@ -23,6 +23,8 @@ class org_midgardproject_projectsite_controllers_product
                 'href' => MIDGARDMVC_STATIC_URL . '/org_midgardproject_projectsite/css/product.css'
             )
         );
+        midgardmvc_core::get_instance()->head->enable_jquery();
+        midgardmvc_core::get_instance()->head->add_jsfile(MIDGARDMVC_STATIC_URL . '/org_midgardproject_projectsite/js/menu.js');
     }
     
     public static function get_product_by_name($name)
