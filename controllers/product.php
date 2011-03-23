@@ -8,14 +8,14 @@ class org_midgardproject_projectsite_controllers_product
 
     public function get_product(array $args)
     {
-        $this->data['product'] = $this->get_product_by_name($args['product']);
+        $this->data['product'] = self::get_product_by_name($args['product']);
         $this->data['product']->rdfmapper = new midgardmvc_ui_create_rdfmapper($this->data['product']);
         midgardmvc_core::get_instance()->head->set_title($this->data['product']->title);
         
         $this->data['documentation'] = $this->get_documentation($this->data['product']);
     }
     
-    private function get_product_by_name($name)
+    public static function get_product_by_name($name)
     {
         $q = new midgard_query_select
         (

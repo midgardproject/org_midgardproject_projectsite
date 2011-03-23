@@ -22,6 +22,12 @@ class org_midgardproject_projectsite_injector
             'action-update',
             'org_midgardproject_projectsite_injector::create_url'
         );
+        midgard_object_class::connect_default
+        (
+            'org_midgardproject_projectsite_document',
+            'action-create',
+            'org_midgardproject_projectsite_injector::check_product'
+        );
         $connected = true;
     }
 
@@ -38,5 +44,23 @@ class org_midgardproject_projectsite_injector
             return;
         }
         $product->name = midgardmvc_helper_urlize::string($product->title);
+    }
+    
+    public static function check_product(org_midgardproject_projectsite_document $document)
+    {
+        if ($document->product)
+        {
+            return;
+        }
+        $args = midgardmvc_core::get_instance()->context->get_request()->get_arguments();
+        try
+        {
+            $product = org_midgardproject_projectsite_controllers_product::get_product_by_name($args[0]);
+            $document->product = $product->id;
+        }
+        catch (midgardmvc_exception_notfound $e)
+        {
+            return;
+        }
     }
 }
