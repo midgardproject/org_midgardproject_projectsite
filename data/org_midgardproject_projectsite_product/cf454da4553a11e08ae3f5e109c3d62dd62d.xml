@@ -5,8 +5,8 @@
       <creator>f6b665f1984503790ed91f39b11b5392</creator>
       <created>2011-03-23 10:46:29+0000</created>
       <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
-      <revised>2011-03-23 17:15:26+0000</revised>
-      <revision>8</revision>
+      <revised>2011-03-23 17:45:33+0000</revised>
+      <revision>9</revision>
       <locker></locker>
       <locked>0001-01-01 00:00:00+0000</locked>
       <approver></approver>
@@ -17,7 +17,7 @@
       <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
       <hidden>0</hidden>
       <navnoentry>0</navnoentry>
-      <size>1551</size>
+      <size>1550</size>
       <published>0001-01-01 00:00:00+0000</published>
       <score>0</score>
       <imported>0001-01-01 00:00:00+0000</imported>
@@ -31,7 +31,7 @@
     <name>midgardmvc</name>
     <title>Midgard MVC</title>
     <category>framework</category>
-    <abstract>&amp;lt;b&amp;gt;Component-oriented&amp;lt;/b&amp;gt; web framework for &amp;lt;b&amp;gt;PHP&amp;lt;/b&amp;gt;.</abstract>
+    <abstract>&amp;lt;b&amp;gt;Component-oriented&amp;lt;/b&amp;gt; web framework for &amp;lt;b&amp;gt;PHP&amp;lt;/b&amp;gt;</abstract>
     <content>&amp;lt;p&amp;gt;Midgard MVC is a web framework for PHP. Being a framework, it provides a standard way to build and deploy web applications. Your applications provide a set of interfaces that Midgard MVC calls when a matching HTTP request is made.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;Midgard MVC can be used with the &amp;lt;a href="/midgard2/"&amp;gt;Midgard2&amp;lt;/a&amp;gt; Content Repository, but it also works without it.&amp;lt;/p&amp;gt;&amp;lt;div&amp;gt;&amp;lt;h2&amp;gt;Basic building blocks:&amp;lt;/h2&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Application:&amp;lt;/b&amp;gt; a configuration file describing the components and other settings used in a Midgard MVC website&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Component:&amp;lt;/b&amp;gt; a PHP module intended to run as part of a web application. For example: a news listing. Provides routes, controllers and templates&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Library:&amp;lt;/b&amp;gt; a PHP module that can be called by other modules to perform some task. Does not run as part of a website. For example: a form validation library&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Service:&amp;lt;/b&amp;gt; a standardized interface to access a given functionality. For example: authentication&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Provider:&amp;lt;/b&amp;gt; a standardized interface to access given information. For example: hierarchy. The difference between Services and Providers is that Services perform tasks while Providers merely provide access to a particular type of data&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/div&amp;gt;</content>
   </org_midgardproject_projectsite_product>
 </midgard_object>

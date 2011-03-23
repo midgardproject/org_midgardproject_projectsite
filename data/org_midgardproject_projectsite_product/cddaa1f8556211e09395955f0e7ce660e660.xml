@@ -5,8 +5,8 @@
       <creator>f6b665f1984503790ed91f39b11b5392</creator>
       <created>2011-03-23 15:32:46+0000</created>
       <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
-      <revised>2011-03-23 15:52:50+0000</revised>
-      <revision>5</revision>
+      <revised>2011-03-23 17:45:33+0000</revised>
+      <revision>6</revision>
       <locker></locker>
       <locked>0001-01-01 00:00:00+0000</locked>
       <approver></approver>
@@ -17,7 +17,7 @@
       <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
       <hidden>0</hidden>
       <navnoentry>0</navnoentry>
-      <size>809</size>
+      <size>808</size>
       <published>0001-01-01 00:00:00+0000</published>
       <score>0</score>
       <imported>0001-01-01 00:00:00+0000</imported>
@@ -31,7 +31,7 @@
     <name>midcom</name>
     <title>MidCOM</title>
     <category>framework</category>
-    <abstract>&amp;lt;b&amp;gt;Tightly coupled&amp;lt;/b&amp;gt; PHP framework for &amp;lt;b&amp;gt;Midgard&amp;lt;/b&amp;gt; with focus on &amp;lt;b&amp;gt;access control&amp;lt;/b&amp;gt;.</abstract>
+    <abstract>&amp;lt;b&amp;gt;Tightly coupled&amp;lt;/b&amp;gt; PHP framework for &amp;lt;b&amp;gt;Midgard&amp;lt;/b&amp;gt; with focus on &amp;lt;b&amp;gt;access control&amp;lt;/b&amp;gt;</abstract>
     <content>&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;MidCOM is component framework for PHP running on top of the Midgard framework. MidCOM provides a full content management system based on a series of components. MidCOM users can build their websites by &amp;lt;i&amp;gt;"clicking together"&amp;lt;/i&amp;gt; a directory hierarchy, each folder being managed by the appropriate component.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;MidCOM components are distributed as PEAR packages that allows easy installation and maintenance of the environment.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;</content>
   </org_midgardproject_projectsite_product>
 </midgard_object>
