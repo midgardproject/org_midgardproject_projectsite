@@ -5,8 +5,8 @@
       <creator>f6b665f1984503790ed91f39b11b5392</creator>
       <created>2011-03-23 16:05:00+0000</created>
       <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
-      <revised>2011-03-23 16:31:07+0000</revised>
-      <revision>1</revision>
+      <revised>2011-03-23 20:37:17+0000</revised>
+      <revision>3</revision>
       <locker></locker>
       <locked>0001-01-01 00:00:00+0000</locked>
       <approver></approver>
@@ -17,21 +17,21 @@
       <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
       <hidden>0</hidden>
       <navnoentry>0</navnoentry>
-      <size>1226</size>
+      <size>1598</size>
       <published>0001-01-01 00:00:00+0000</published>
       <score>0</score>
-      <imported>0001-01-01 00:00:00+0000</imported>
+      <imported>2011-03-23 17:36:23+0000</imported>
       <exported>0001-01-01 00:00:00+0000</exported>
       <deleted>0</deleted>
       <isapproved>0</isapproved>
       <islocked>0</islocked>
     </metadata>
     <action></action>
-    <id>4</id>
+    <id>8</id>
     <name>midgard2</name>
     <title>Midgard2</title>
     <category>contentrepository</category>
     <abstract>Generic &amp;lt;b&amp;gt;Content Repository&amp;lt;/b&amp;gt; for &amp;lt;b&amp;gt;Web&amp;lt;/b&amp;gt; and &amp;lt;b&amp;gt;Desktop applications&amp;lt;/b&amp;gt;</abstract>
-    <content>&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Midgard2 is an Open Source Content Repository. It provides an object-oriented and replicated environment for building data-intensive applications for both web and the desktop.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;With Midgard2 you have generic way to define your own storage objects, that can then be queried and managed using multiple programming languages and applications. This enables writing your CMS or project management tool using a repository-oriented architecture where the Midgard2 storage system acts as the central point of integration between various tools.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Midgard2 is built on the &amp;lt;a href="http://www.gnome.org/"&amp;gt;GNOME&amp;lt;/a&amp;gt; stack of libraries like GLib and libgda, and has language bindings for C, Python, PHP and other languages via GObject Introspection. Communications between applications written in the different languages happen over D-Bus.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;</content>
+    <content>&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Midgard2 is an Open Source Content Repository. It provides an object-oriented and replicated environment for building data-intensive applications for both web and the desktop.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;With Midgard2 you have generic way to define your own storage objects, that can then be queried and managed using multiple programming languages and applications. This enables writing your CMS or project management tool using a repository-oriented architecture where the Midgard2 storage system acts as the central point of integration between various tools.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Midgard2 is built on the &amp;lt;a href="http://www.gnome.org/"&amp;gt;GNOME&amp;lt;/a&amp;gt; stack of libraries like &amp;lt;a href="https://secure.wikimedia.org/wikipedia/en/wiki/GLib"&amp;gt;GLib&amp;lt;/a&amp;gt; and &amp;lt;a href="http://www.gnome-db.org/"&amp;gt;libgda&amp;lt;/a&amp;gt;, and has language bindings for &amp;lt;a href="https://secure.wikimedia.org/wikipedia/en/wiki/C_(Programming_Language)"&amp;gt;C&amp;lt;/a&amp;gt;, &amp;lt;a href="http://python.org/"&amp;gt;Python&amp;lt;/a&amp;gt;, &amp;lt;a href="http://php.net/"&amp;gt;PHP&amp;lt;/a&amp;gt; and other languages via &amp;lt;a href="http://live.gnome.org/GObjectIntrospection/"&amp;gt;GObject Introspection&amp;lt;/a&amp;gt;. Communications between applications written in the different languages happen over &amp;lt;a href="http://www.freedesktop.org/wiki/Software/dbus"&amp;gt;D-Bus&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;</content>
   </org_midgardproject_projectsite_product>
 </midgard_object>
