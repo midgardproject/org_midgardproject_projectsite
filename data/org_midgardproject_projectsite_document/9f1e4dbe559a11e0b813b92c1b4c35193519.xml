@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<midgard_object xmlns="http://www.midgard-project.org/midgard_object/1.8">
+  <org_midgardproject_projectsite_document purge="no" action="updated" guid="9f1e4dbe559a11e0b813b92c1b4c35193519">
+    <metadata>
+      <creator>f6b665f1984503790ed91f39b11b5392</creator>
+      <created>2011-03-23 22:12:20+0000</created>
+      <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
+      <revised>2011-03-23 22:13:07+0000</revised>
+      <revision>1</revision>
+      <locker></locker>
+      <locked>0001-01-01 00:00:00+0000</locked>
+      <approver></approver>
+      <approved>0001-01-01 00:00:00+0000</approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart>0001-01-01 00:00:00+0000</schedulestart>
+      <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>1845</size>
+      <published>0001-01-01 00:00:00+0000</published>
+      <score>0</score>
+      <imported>0001-01-01 00:00:00+0000</imported>
+      <exported>0001-01-01 00:00:00+0000</exported>
+      <deleted>0</deleted>
+      <isapproved>0</isapproved>
+      <islocked>0</islocked>
+    </metadata>
+    <action></action>
+    <id>12</id>
+    <product>6828efc6556d11e0ba8a1b516eedd3b4d3b4</product>
+    <title>Technical details</title>
+    <content>&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Midgard Create builds on the idea of &amp;lt;a href="http://bergie.iki.fi/blog/decoupling_content_management/"&amp;gt;Decoupled Content Management&amp;lt;/a&amp;gt;. This means that Midgard Create can be deployed on any web publishing platform that supports some common interfaces like RDFa-annotated content and JSON message passing.&amp;lt;/p&amp;gt;&amp;lt;h3&amp;gt;Reference architecture&amp;lt;/h3&amp;gt;&amp;lt;p&amp;gt;The default deployment architecture of Midgard Create is built on a robust basis of web system components to keep the codebase clean, maintainable and simple. The reference architecture of Midgard Create is the following:&amp;lt;br /&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Content Repository&amp;lt;/b&amp;gt;: &amp;lt;a href="/midgard2/"&amp;gt;Midgard2&amp;lt;/a&amp;gt; is used for all persistent content storage and retrieval&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Web framework&amp;lt;/b&amp;gt;: &amp;lt;a href="/midgardmvc/"&amp;gt;Midgard MVC&amp;lt;/a&amp;gt; provides a model-view-controller framework for PHP&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Server-side scripting language&amp;lt;/b&amp;gt;: &amp;lt;a href="http://php.net/"&amp;gt;PHP5&amp;lt;/a&amp;gt; is used for building the server-side functionality&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Client-side scripting language&amp;lt;/b&amp;gt;: JavaScript with the &amp;lt;a href="http://jquery.com/"&amp;gt;jQuery&amp;lt;/a&amp;gt; library is used for client-side scripting&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;User interface&amp;lt;/b&amp;gt;: the &amp;lt;a href="http://jqueryui.com/"&amp;gt;jQuery UI&amp;lt;/a&amp;gt; library is used for rendering the Midgard Create user interfaces&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Rich text editor&amp;lt;/b&amp;gt;: &amp;lt;a href="http://aloha-editor.org/"&amp;gt;Aloha Editor&amp;lt;/a&amp;gt; is used for content editing&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Workflow system&amp;lt;/b&amp;gt;: &amp;lt;a href="http://incubator.apache.org/zetacomponents/documentation/trunk/Workflow/tutorial.html"&amp;gt;Zeta Components Workflow&amp;lt;/a&amp;gt; is used for server-side workflow definitions&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/div&amp;gt;</content>
+  </org_midgardproject_projectsite_document>
+</midgard_object>
