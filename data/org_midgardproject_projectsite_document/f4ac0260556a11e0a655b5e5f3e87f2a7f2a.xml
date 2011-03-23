@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<midgard_object xmlns="http://www.midgard-project.org/midgard_object/1.8">
+  <org_midgardproject_projectsite_document purge="no" action="created" guid="f4ac0260556a11e0a655b5e5f3e87f2a7f2a">
+    <metadata>
+      <creator>f6b665f1984503790ed91f39b11b5392</creator>
+      <created>2011-03-23 16:31:08+0000</created>
+      <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
+      <revised>2011-03-23 16:31:08+0000</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked>0001-01-01 00:00:00+0000</locked>
+      <approver></approver>
+      <approved>0001-01-01 00:00:00+0000</approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart>0001-01-01 00:00:00+0000</schedulestart>
+      <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>1523</size>
+      <published>0001-01-01 00:00:00+0000</published>
+      <score>0</score>
+      <imported>0001-01-01 00:00:00+0000</imported>
+      <exported>0001-01-01 00:00:00+0000</exported>
+      <deleted>0</deleted>
+      <isapproved>0</isapproved>
+      <islocked>0</islocked>
+    </metadata>
+    <action></action>
+    <id>6</id>
+    <product>4e20cbcc556711e0bf9f557e78066d206d20</product>
+    <title>What is a Content Repository?</title>
+    <content>&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Content Repository is a service that sits between an application and a data store. It provides several advantages:&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Common rules for data access&amp;lt;/b&amp;gt; mean that multiple applications can work with same content without breaking consistency of the data&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Signals about changes&amp;lt;/b&amp;gt; let applications know when another application using the repository modifies something, enabling collaborative data management between apps&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Objects instead of SQL&amp;lt;/b&amp;gt; mean that developers can deal with data using APIs more compatible with the rest of their desktop programming environment, and without having to fear issues like SQL injection&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Data model is scriptable&amp;lt;/b&amp;gt; when you use a content repository, meaning that users can easily write Python or PHP scripts to perform batch operations on their data without having to learn your storage format&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;Synchronization and sharing&amp;lt;/b&amp;gt; features can be implemented on the content repository level meaning that you gain these features without having to worry about them&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;The basic idea is that with a Content Repository, developers can use standard interfaces for data storage instead of coming up with their own file formats or database schemas.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;</content>
+  </org_midgardproject_projectsite_document>
+</midgard_object>
