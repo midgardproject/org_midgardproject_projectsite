@@ -11,15 +11,9 @@ h1
 
 .stack > div
 {
-    border: 2px solid #8f5902;
-    background-color: #fcaf3e;
     width: 100%;
     min-height: 180px;
     margin-bottom: 1em;
-    padding: 1em;
-    -moz-box-shadow: 4px 4px 2px #8f5902;
-    -webkit-box-shadow: 4px 4px 2px #8f5902;
-    box-shadow: 4px 4px 2px #8f5902;
 }
 
 .stack div h2
@@ -77,10 +71,15 @@ h1
 }
 
 .tagline strong,
-.tagline b,
+.tagline b
+{
+    font-weight: normal;
+    color: #ce5c00;
+}
 .stack ul li strong,
 .stack ul li b
 {
     font-weight: normal;
-    color: #8f5902;
+    color: #2e3436;
 }
+
