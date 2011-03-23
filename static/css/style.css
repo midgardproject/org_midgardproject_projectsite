@@ -61,8 +61,7 @@ header{
 	margin-bottom: 35px;
 }
 #center{	
-	padding: 0 0 0 115px;
-	margin-left: 0;
+	margin-left: 10%;
 	margin-right: 10%;
 }
 aside{
@@ -119,7 +118,7 @@ header .logo
 {
     position: absolute;
     top: 20px;
-    left: 0px;
+    left: -4px;
     width: 100px;
     height: 100px;
     overflow: hidden;
