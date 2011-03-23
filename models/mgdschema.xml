@@ -17,9 +17,11 @@
         </property>
         <property name="abstract" type="text">
             <property>doap:shortdesc</property>
+            <contenttype>html</contenttype>
         </property>
         <property name="content" type="text">
             <property>doap:description</property>
+            <contenttype>html</contenttype>
         </property>
     </type>
    <type name="org_midgardproject_projectsite_document" table="org_midgardproject_projectsite_document" parent="org_midgardproject_projectsite_product">
@@ -38,6 +40,7 @@
         </property>
         <property name="content" type="text">
             <property>doap:description</property>
+            <contenttype>html</contenttype>
         </property>
     </type>
 </Schema>
