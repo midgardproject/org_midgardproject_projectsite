@@ -6,7 +6,7 @@ components:
     midgardmvc_core:
         - {type: github, user: midgardproject, repository: midgardmvc_core, branch: master}
     org_midgardproject_projectsite:
-        - {type: github, user: bergie, repository: org_midgardproject_projectsite, branch: master}
+        - {type: github, user: midgardproject, repository: org_midgardproject_projectsite, branch: master}
     com_meego_planet:
         - {type: github, user: nemein, repository: com_meego_planet, branch: master}
     midgardmvc_ui_create:
