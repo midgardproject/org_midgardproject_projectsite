@@ -43,4 +43,20 @@
 .stack ul li .logo
 {
     float: left;
+    margin-right: 1em;
+}
+
+.stack ul li h3
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.tagline strong,
+.tagline b,
+.stack ul li strong,
+.stack ul li b
+{
+    font-weight: normal;
+    color: #8f5902;
 }

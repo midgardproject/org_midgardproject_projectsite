@@ -3,4 +3,35 @@
     position: absolute;
     left: 5px;
     top: 5px;
+    z-index: -1;
+}
+
+h1
+{
+    margin-bottom: 0px;
+    margin-top: -50px;
+}
+
+.tagline
+{
+    font-size: larger;
+    font-style: italic;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.tagline strong,
+.tagline b
+{
+    font-weight: normal;
+    color: #8f5902;
+}
+
+pre
+{
+    padding: 0.5em;
+    background-color: #eeeeec;
+    width: 99%;
+    overflow: auto;
 }
