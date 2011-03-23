@@ -9,7 +9,7 @@
 <div class="stack">
     <div tal:repeat="category current_component/categories" tal:attributes="class category/category">
         <h2 tal:content="category/title">Web Framework</h2>
-        <ul tal:attributes="typeof category/products/typeof">
+        <ul tal:attributes="typeof category/products/typeof; mgd:baseurl string:/${category/category}/">
             <li class="product" tal:repeat="product category/products" tal:attributes="about product/rdfmapper/about; typeof product/rdfmapper/typeof">
                 <div class="logo">
                     <tal:block tal:content="structure php:midgardmvc_helper_attachmentserver_helpers::render_location_image(product, 'logo', 'smallthumbnail')" />

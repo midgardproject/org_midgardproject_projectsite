@@ -39,11 +39,24 @@ class org_midgardproject_projectsite_injector
     
     public static function create_url(org_midgardproject_projectsite_product $product)
     {
+        self::check_category($product);
+        
         if ($product->name)
         {
             return;
         }
         $product->name = midgardmvc_helper_urlize::string($product->title);
+    }
+    
+    public static function check_category(org_midgardproject_projectsite_product $product)
+    {
+        if ($product->category)
+        {
+            return;
+        }
+        
+        $args = midgardmvc_core::get_instance()->context->get_request()->get_arguments();
+        $product->category = $args[0];
     }
     
     public static function check_product(org_midgardproject_projectsite_document $document)
