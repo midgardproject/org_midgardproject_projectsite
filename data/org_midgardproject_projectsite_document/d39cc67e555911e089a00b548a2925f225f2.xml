@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<midgard_object xmlns="http://www.midgard-project.org/midgard_object/1.8">
+  <org_midgardproject_projectsite_document purge="no" action="updated" guid="d39cc67e555911e089a00b548a2925f225f2">
+    <metadata>
+      <creator>f6b665f1984503790ed91f39b11b5392</creator>
+      <created>2011-03-23 14:28:31+0000</created>
+      <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
+      <revised>2011-03-23 14:28:31+0000</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked>0001-01-01 00:00:00+0000</locked>
+      <approver></approver>
+      <approved>0001-01-01 00:00:00+0000</approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart>0001-01-01 00:00:00+0000</schedulestart>
+      <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>1356</size>
+      <published>0001-01-01 00:00:00+0000</published>
+      <score>0</score>
+      <imported>0001-01-01 00:00:00+0000</imported>
+      <exported>0001-01-01 00:00:00+0000</exported>
+      <deleted>0</deleted>
+      <isapproved>0</isapproved>
+      <islocked>0</islocked>
+    </metadata>
+    <action></action>
+    <id>2</id>
+    <product>cf454da4553a11e08ae3f5e109c3d62dd62d</product>
+    <title>Installation</title>
+    <content>&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;The easiest way to install Midgard MVC is by using the midgardmvc_installer tool. You can install the tool with PEAR by running the following:&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;$ sudo pear channel-discover pear.indeyets.pp.ru&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;$ sudo pear install indeyets/midgardmvc_installer&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;After this you can install Midgard MVC applications by pointing the Midgard MVC installer to a application configuration YAML file and a target directory. For example:&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;$ midgardmvc install https://github.com/bergie/org_midgardproject_productsite/raw/master/rdf.yml ~/midgardexample&amp;lt;br /&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;The Midgard MVC installer will install Midgard MVC, and all components and libraries required by the application. It will also generate a Midgard2 database for the application. Now running the application is easy:&amp;lt;/p&amp;gt;&amp;lt;pre&amp;gt;$ ~/midgardexample/run&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;By default the &amp;lt;a href="https://github.com/indeyets/appserver-in-php/wiki"&amp;gt;AppServer in PHP&amp;lt;/a&amp;gt; used for running Midgard MVC will be available in &amp;lt;a href="http://localhost:8001"&amp;gt;http://localhost:8001&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;</content>
+  </org_midgardproject_projectsite_document>
+</midgard_object>
