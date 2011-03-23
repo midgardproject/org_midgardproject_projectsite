@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <midgard_object xmlns="http://www.midgard-project.org/midgard_object/1.8">
-  <org_midgardproject_projectsite_project purge="no" action="updated" guid="3fcdb040555c11e081f6db54239e79b179b1">
+  <org_midgardproject_projectsite_product purge="no" action="updated" guid="cddaa1f8556211e09395955f0e7ce660e660">
     <metadata>
       <creator>f6b665f1984503790ed91f39b11b5392</creator>
-      <created>2011-03-23 14:45:51+0000</created>
+      <created>2011-03-23 15:32:46+0000</created>
       <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
-      <revised>2011-03-23 15:23:31+0000</revised>
+      <revised>2011-03-23 15:33:23+0000</revised>
       <revision>2</revision>
       <locker></locker>
       <locked>0001-01-01 00:00:00+0000</locked>
@@ -17,7 +17,7 @@
       <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
       <hidden>0</hidden>
       <navnoentry>0</navnoentry>
-      <size>722</size>
+      <size>331</size>
       <published>0001-01-01 00:00:00+0000</published>
       <score>0</score>
       <imported>0001-01-01 00:00:00+0000</imported>
@@ -27,9 +27,11 @@
       <islocked>0</islocked>
     </metadata>
     <action></action>
-    <id>1</id>
-    <title>The Midgard Project</title>
-    <abstract>&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Midgard is a free software project aiming to build a content repository useful for synchronized desktop, mobile and web applications. Since 1999, the project has been releasing both the content repository library itself, and also many useful tools around it, like web frameworks for PHP and Python.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;The project is fully volunteer-driven, with individuals and multiple companies working together to build useful common infrastructure.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;</abstract>
+    <id>3</id>
+    <name>midcom</name>
+    <title>MidCOM</title>
+    <category>framework</category>
+    <abstract>&amp;lt;b&amp;gt;Tightly coupled&amp;lt;/b&amp;gt; PHP framework with focus on &amp;lt;b&amp;gt;access control&amp;lt;/b&amp;gt;.</abstract>
     <content></content>
-  </org_midgardproject_projectsite_project>
+  </org_midgardproject_projectsite_product>
 </midgard_object>
