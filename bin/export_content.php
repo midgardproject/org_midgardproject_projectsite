@@ -53,10 +53,11 @@ function export_object(midgard_object $object)
 
 function filepath_for_object(midgard_object $object)
 {
-    $export_dir = realpath(dirname(__FILE__) . '/../data/' . get_class($object));
+    $export_dir = dirname(__FILE__) . '/../data/' . get_class($object);
     if (!file_exists($export_dir))
     {
         mkdir($export_dir, 0777, true);
     }
+    $export_dir = realpath($export_dir);
     return $export_dir . '/' . $object->guid . '.xml';
 }
