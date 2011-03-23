@@ -4,6 +4,7 @@ requires:
     midgardmvc_helper_urlize:
         - {type: github, user: bergie, repository: midgardmvc_helper_urlize, branch: master}
 process_injector: org_midgardproject_projectsite_injector
+template_injector: org_midgardproject_projectsite_injector
 routes:
     index:
         path: /

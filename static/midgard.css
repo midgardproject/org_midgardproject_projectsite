@@ -1,0 +1,18 @@
+body
+{
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+}
+
+h1,h2,h3
+{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a
+{
+    color: #8f5902;
+}
+

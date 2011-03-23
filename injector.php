@@ -24,6 +24,12 @@ class org_midgardproject_projectsite_injector
         );
         $connected = true;
     }
+
+    public function inject_template(midgardmvc_core_request $request)
+    {
+        // We inject the template to provide MeeGo styling
+        $request->add_component_to_chain(midgardmvc_core::get_instance()->component->get('org_midgardproject_projectsite'), true);
+    }
     
     public static function create_url(org_midgardproject_projectsite_product $product)
     {
