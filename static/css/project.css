@@ -64,8 +64,8 @@
 .tagline strong,
 .tagline b
 {
-    font-weight: normal;
-    color: #ce5c00;
+    font-weight: bold;
+    color: #2e3436;
 }
 .stack ul li strong,
 .stack ul li b

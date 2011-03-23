@@ -135,6 +135,9 @@ header div.tagline {
     top: 97px;
 	left: 110px;
 }
+header div.tagline b {
+    font-weight: normal;
+}
 /*---------------------------------------------------*/
 article.fullwidth{
 	float: none;
