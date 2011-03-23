@@ -61,7 +61,7 @@
             <property>dcterms:title</property>
         </property>
         <property name="content" type="text">
-            <property>doap:description</property>
+            <property>sioc:content</property>
             <contenttype>html</contenttype>
         </property>
     </type>
