@@ -8,9 +8,9 @@ class org_midgardproject_projectsite_controllers_project
 
     public function get_project(array $args)
     {
-        $this->data['node'] = $this->request->get_node()->get_object();
-        $this->data['node']->rdfmapper = new midgardmvc_ui_create_rdfmapper($this->data['node']);
-        midgardmvc_core::get_instance()->head->set_title($this->data['node']->title);
+        $this->data['project'] = $this->get_project_by_title($this->request->get_node()->get_object()->title);
+        $this->data['project']->rdfmapper = new midgardmvc_ui_create_rdfmapper($this->data['project']);
+        midgardmvc_core::get_instance()->head->set_title($this->data['project']->title);
 
         $controller = $this;
         $this->data['categories'] = array_map
@@ -71,5 +71,32 @@ class org_midgardproject_projectsite_controllers_project
         );
         
         return $collection;
+    }
+
+    private function get_project_by_title($title)
+    {
+        $q = new midgard_query_select
+        (
+            new midgard_query_storage('org_midgardproject_projectsite_project')
+        );
+        $q->set_constraint
+        (
+            new midgard_query_constraint
+            (
+                new midgard_query_property('title'),
+                '=',
+                new midgard_query_value($title)
+            )
+        );
+        $q->execute();
+        if ($q->resultscount == 0)
+        {
+            $project = new org_midgardproject_projectsite_project();
+            $project->title = $title;
+            $project->guid = 'placeholder';
+            return $project;
+        }
+        $projects = $q->list_objects();
+        return $projects[0];
     }
 }

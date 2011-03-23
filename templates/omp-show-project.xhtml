@@ -1,8 +1,8 @@
-<div tal:attributes="about current_component/node/rdfmapper/about; typeof current_component/node/rdfmapper/typeof">
-    <h1 tal:content="current_component/node/title" tal:attributes="property current_component/node/rdfmapper/title">The Midgard Project</h1>
+<div tal:define="project current_component/project" tal:attributes="about project/rdfmapper/about; typeof project/rdfmapper/typeof">
+    <h1 tal:content="project/title" tal:attributes="property project/rdfmapper/title">The Midgard Project</h1>
 
-    <div tal:content="structure current_component/node/content" tal:attributes="property current_component/node/rdfmapper/content">
-        Node content
+    <div class="tagline" tal:content="structure project/abstract" tal:attributes="property project/rdfmapper/abstract">
+        Tagline
     </div>
 </div>
 

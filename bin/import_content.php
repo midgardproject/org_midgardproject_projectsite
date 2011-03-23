@@ -9,6 +9,7 @@ $basedir = dirname(__FILE__) . '/../..';
 require("{$basedir}/midgardmvc_core/framework.php");
 $mvc = midgardmvc_core::get_instance("{$basedir}/application.yml");
 
+import_type('org_midgardproject_projectsite_project');
 import_type('org_midgardproject_projectsite_product');
 import_type('org_midgardproject_projectsite_document');
 
