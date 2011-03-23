@@ -20,7 +20,7 @@ class org_midgardproject_projectsite_controllers_product
             (
                 'rel' => 'stylesheet',
                 'type' => 'text/css',
-                'href' => MIDGARDMVC_STATIC_URL . '/org_midgardproject_projectsite/product.css'
+                'href' => MIDGARDMVC_STATIC_URL . '/org_midgardproject_projectsite/css/product.css'
             )
         );
     }

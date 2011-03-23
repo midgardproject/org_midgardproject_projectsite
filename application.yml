@@ -27,8 +27,8 @@ attachmentserver_variants:
             height: 70
     thumbnail:
         scale:
-            width: 142
-            height: 142
+            width: 100
+            height: 100
     view:
         scale:
             width: 380

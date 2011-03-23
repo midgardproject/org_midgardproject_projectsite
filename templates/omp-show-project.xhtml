@@ -1,12 +1,12 @@
-<div tal:define="project current_component/project" tal:attributes="about project/rdfmapper/about; typeof project/rdfmapper/typeof">
-    <h1 tal:content="project/title" tal:attributes="property project/rdfmapper/title">The Midgard Project</h1>
+<article tal:define="project current_component/project" tal:attributes="about project/rdfmapper/about; typeof project/rdfmapper/typeof">
 
-    <div class="tagline" tal:content="structure project/abstract" tal:attributes="property project/rdfmapper/abstract">
+    <section class="tagline" tal:content="structure project/abstract" tal:attributes="property project/rdfmapper/abstract">
         Tagline
-    </div>
+    </section>
+
 
     <div class="stack">
-        <div tal:repeat="category current_component/categories" tal:attributes="class category/category">
+        <section tal:repeat="category current_component/categories" tal:attributes="class category/category">
             <h2 tal:content="category/title">Web Framework</h2>
             <ul tal:attributes="typeof category/products/typeof; mgd:baseurl string:/${category/category}/">
                 <li class="product" tal:repeat="product category/products" tal:attributes="about product/rdfmapper/about; typeof product/rdfmapper/typeof">
@@ -20,10 +20,10 @@
                     </p>
                 </li>
             </ul>
-        </div>
+        </section>
     </div>
-
-    <div tal:content="structure project/content" tal:attributes="property project/rdfmapper/content">
+	<div class="clear"></div>
+    <section tal:content="structure project/content" tal:attributes="property project/rdfmapper/content">
         More information about the project
-    </div>
-</div>
+    </section>
+</article>

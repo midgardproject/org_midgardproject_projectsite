@@ -12,9 +12,11 @@ routes:
         action: project
         template_aliases:
             content: omp-show-project
+            header: omp-show-project_header
     product:
         path: /{$product}
         controller: org_midgardproject_projectsite_controllers_product
         action: product
         template_aliases:
             content: omp-show-product
+            header: omp-show-product_header

@@ -33,7 +33,7 @@ class org_midgardproject_projectsite_controllers_project
             (
                 'rel' => 'stylesheet',
                 'type' => 'text/css',
-                'href' => MIDGARDMVC_STATIC_URL . '/org_midgardproject_projectsite/project.css'
+                'href' => MIDGARDMVC_STATIC_URL . '/org_midgardproject_projectsite/css/project.css'
             )
         );
     }
