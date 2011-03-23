@@ -2,9 +2,21 @@
     <div class="tagline" tal:content="structure product/content" tal:attributes="property product/rdfmapper/content">
         Product description
     </div>
-    
+
+    <aside>
+        <div class="sidebox linklist">
+            <div class="wrapper">
+                <ul>
+                    <li tal:repeat="document current_component/documentation">
+                        <a tal:attributes="href string:#${document/guid}" tal:content="document/title">Usage</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
     <div tal:attributes="typeof current_component/documentation/typeof; mgd:baseurl request/uri">
-        <section tal:repeat="document current_component/documentation" tal:attributes="about document/rdfmapper/about; typeof document/rdfmapper/typeof">
+        <section tal:repeat="document current_component/documentation" tal:attributes="about document/rdfmapper/about; typeof document/rdfmapper/typeof; id document/guid">
             <h1 tal:content="document/title" tal:attributes="property document/rdfmapper/title">Usage</h1>
             <div tal:content="structure document/content" tal:attributes="property document/rdfmapper/content">Say &lt;?php echo "hello world"; ?&gt;</div>
         </section>

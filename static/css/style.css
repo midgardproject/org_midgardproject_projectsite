@@ -71,7 +71,7 @@ header{
 }
 aside{
 	display: block;
-	width: 216px;
+	width: 20%;
 	float: right;
 }
 article{
@@ -153,6 +153,9 @@ article h1{
     font-size: 20pt;
 	margin-bottom: 10px;
 }
+article section {
+	width: 78%;
+}
 article p{
 	margin-bottom: 10px;
 }
@@ -168,7 +171,6 @@ article pre{
 	padding: 15px 20px;
 	font-size: 12px;
 	overflow: auto;
-	/*width: 426px;*/
 	max-height: 150px;
 }
 article .tagline
