@@ -13,6 +13,16 @@ class org_midgardproject_projectsite_controllers_product
         midgardmvc_core::get_instance()->head->set_title($this->data['product']->title);
         
         $this->data['documentation'] = $this->get_documentation($this->data['product']);
+
+        midgardmvc_core::get_instance()->head->add_link
+        (
+            array
+            (
+                'rel' => 'stylesheet',
+                'type' => 'text/css',
+                'href' => MIDGARDMVC_STATIC_URL . '/org_midgardproject_projectsite/product.css'
+            )
+        );
     }
     
     public static function get_product_by_name($name)
