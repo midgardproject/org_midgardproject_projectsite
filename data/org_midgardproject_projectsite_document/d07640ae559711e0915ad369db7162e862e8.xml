@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<midgard_object xmlns="http://www.midgard-project.org/midgard_object/1.8">
+  <org_midgardproject_projectsite_document purge="no" action="updated" guid="d07640ae559711e0915ad369db7162e862e8">
+    <metadata>
+      <creator>f6b665f1984503790ed91f39b11b5392</creator>
+      <created>2011-03-23 21:52:14+0000</created>
+      <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
+      <revised>2011-03-23 21:53:10+0000</revised>
+      <revision>2</revision>
+      <locker></locker>
+      <locked>0001-01-01 00:00:00+0000</locked>
+      <approver></approver>
+      <approved>0001-01-01 00:00:00+0000</approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart>0001-01-01 00:00:00+0000</schedulestart>
+      <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>3020</size>
+      <published>0001-01-01 00:00:00+0000</published>
+      <score>0</score>
+      <imported>0001-01-01 00:00:00+0000</imported>
+      <exported>0001-01-01 00:00:00+0000</exported>
+      <deleted>0</deleted>
+      <isapproved>0</isapproved>
+      <islocked>0</islocked>
+    </metadata>
+    <action></action>
+    <id>11</id>
+    <product>cf454da4553a11e08ae3f5e109c3d62dd62d</product>
+    <title>Request isolation and making of sub-requests</title>
+    <content>&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Midgard MVC supports handling multiple requests within same web page. For example, the main content of your page can be served from a request, and then a news listing in a sidebar can be handled from a sub-request.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Since this means that potentially multiple routes, controllers and templates will be run within the same PHP execution, every request must be isolated within the PHP variable scope. To accomplish this, the principle is that all request-specific information is stored within the Request object that gets passed around between the front controller, dispatcher and actual controllers, and all of them are actually stateless. For example, the dispatch method of a dispatcher, or the template method of the front controller may be run multiple times within same PHP execution.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Within any stage of Midgard MVC execution you can make a sub-request in the following way:&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;&amp;amp;lt;?php&amp;lt;br /&amp;gt;// Set up intent, for example a hierarchy node, node URL or component name&amp;lt;br /&amp;gt;$intent = '/myfolder/date';&amp;lt;br /&amp;gt;// Get a Request object based on the intent&amp;lt;br /&amp;gt;$request = midgardmvc_core_request::get_for_intent($intent);&amp;lt;br /&amp;gt;// Process the Request&amp;lt;br /&amp;gt;midgardmvc_core::get_instance()-&amp;amp;gt;dispatcher-&amp;amp;gt;dispatch($request);&amp;lt;br /&amp;gt;// Use the resulting data&amp;lt;br /&amp;gt;$component_data = $request-&amp;amp;gt;get_data_item('current_component');&amp;lt;br /&amp;gt;echo $component_data['date'];&amp;lt;br /&amp;gt;?&amp;amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;For convenience purposes there are two helpers for sub-request handling in the templating class. Dynamic call will perform the sub-request and return its data:&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;$data = midgardmvc_core::get_instance()-&amp;amp;gt;templating-&amp;amp;gt;dynamic_call($intent, $route_id, $route_args);&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Dynamic load will perform the subrequest and return its templated output:&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;$content = midgardmvc_core::get_instance()-&amp;amp;gt;templating-&amp;amp;gt;dynamic_load($intent, $route_id, $route_args, true);&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;These same calls can also be used inside templates. For example, to display news items returned by another route, you can:&amp;lt;br /&amp;gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;&amp;amp;lt;ol tal:define="news php:midgardmvc.templating.dynamic_call('/news/', 'index', array())"&amp;amp;gt;&amp;lt;br /&amp;gt;&amp;#xA0;&amp;#xA0; &amp;#xA0;&amp;amp;lt;li class="news" tal:repeat="item news/items"&amp;amp;gt;&amp;lt;br /&amp;gt;&amp;#xA0;&amp;#xA0; &amp;#xA0; &amp;#xA0; &amp;#xA0;&amp;amp;lt;h3&amp;amp;gt;&amp;lt;br /&amp;gt;&amp;#xA0;&amp;#xA0; &amp;#xA0; &amp;#xA0; &amp;#xA0; &amp;#xA0; &amp;#xA0;&amp;amp;lt;a tal:content="item/title" tal:attributes="href item/url"&amp;amp;gt;Blog post&amp;amp;lt;/a&amp;amp;gt;&amp;lt;br /&amp;gt;&amp;#xA0;&amp;#xA0; &amp;#xA0; &amp;#xA0; &amp;#xA0;&amp;amp;lt;/h3&amp;amp;gt;&amp;lt;br /&amp;gt;&amp;#xA0;&amp;#xA0; &amp;#xA0; &amp;#xA0; &amp;#xA0;&amp;amp;lt;div tal:content="structure item/abstract"&amp;amp;gt;&amp;lt;br /&amp;gt;&amp;#xA0;&amp;#xA0; &amp;#xA0; &amp;#xA0; &amp;#xA0; &amp;#xA0; &amp;#xA0;Lorem ipsum&amp;lt;br /&amp;gt;&amp;#xA0;&amp;#xA0; &amp;#xA0; &amp;#xA0; &amp;#xA0;&amp;amp;lt;/div&amp;amp;gt;&amp;lt;br /&amp;gt;&amp;#xA0;&amp;#xA0; &amp;#xA0;&amp;amp;lt;/li&amp;amp;gt;&amp;lt;br /&amp;gt;&amp;amp;lt;/ol&amp;amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;If you want the delegate the template of that sub-request to the component being called, then use &amp;lt;i&amp;gt;dynamic_load&amp;lt;/i&amp;gt;.&amp;#xA0;</content>
+  </org_midgardproject_projectsite_document>
+</midgard_object>
