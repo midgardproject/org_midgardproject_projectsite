@@ -55,7 +55,7 @@ function import_file($type, $guid, $path)
     }
    
     echo "importing to " . get_class($new_object) . " {$new_object->guid}\n";
-    midgard_replicator::import_object($new_object);
+    midgard_replicator::import_object($new_object, true);
 }
 
 function filepath_for_type($type)
