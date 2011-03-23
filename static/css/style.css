@@ -71,7 +71,8 @@ header{
 }
 aside{
 	display: block;
-	width: 216px;
+	width: 20%;
+	max-width: 216px;
 	float: right;
 }
 article{
