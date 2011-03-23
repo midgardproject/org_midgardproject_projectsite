@@ -5,8 +5,8 @@
       <creator>f6b665f1984503790ed91f39b11b5392</creator>
       <created>2011-03-23 16:48:40+0000</created>
       <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
-      <revised>2011-03-23 16:52:56+0000</revised>
-      <revision>1</revision>
+      <revised>2011-03-23 20:43:09+0000</revised>
+      <revision>2</revision>
       <locker></locker>
       <locked>0001-01-01 00:00:00+0000</locked>
       <approver></approver>
@@ -17,7 +17,7 @@
       <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
       <hidden>0</hidden>
       <navnoentry>0</navnoentry>
-      <size>567</size>
+      <size>678</size>
       <published>0001-01-01 00:00:00+0000</published>
       <score>0</score>
       <imported>0001-01-01 00:00:00+0000</imported>
@@ -32,6 +32,6 @@
     <title>Midgard Create</title>
     <category>frontend</category>
     <abstract>&amp;lt;b&amp;gt;Website editing&amp;lt;/b&amp;gt; without Forms</abstract>
-    <content>&amp;lt;p&amp;gt;Midgard Create is a modern Content Management User Interface. With Midgard Create you can communicate with your audience visually instead of having to edit with clunky forms and special administrative interfaces. Just log in to your website and start editing.&amp;lt;/p&amp;gt;</content>
+    <content>&amp;lt;p&amp;gt;Midgard Create is a web editing tool (commonly known as Content Management System) that allows users to manage all their web content within a browser-based interface.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;With Midgard Create you can communicate with your audience visually instead of having to edit with clunky forms and special administrative interfaces. Just log in to your website and start editing.&amp;lt;/p&amp;gt;</content>
   </org_midgardproject_projectsite_product>
 </midgard_object>
