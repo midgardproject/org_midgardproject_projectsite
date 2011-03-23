@@ -1,12 +1,14 @@
 <div tal:define="product current_component/product" tal:attributes="about product/rdfmapper/about; typeof product/rdfmapper/typeof">
-    <div class="logo">
-        <tal:block tal:content="structure php:midgardmvc_helper_attachmentserver_helpers::render_location_image(product, 'logo', 'thumbnail')" />
-    </div>
-    <h1 tal:content="product/title" tal:attributes="property product/rdfmapper/title">The Midgard Project</h1>
-    
-    <div class="tagline" tal:content="structure product/abstract" tal:attributes="property product/rdfmapper/abstract">
-        Product tagline
-    </div>
+    <header>
+        <div class="logo">
+            <tal:block tal:content="structure php:midgardmvc_helper_attachmentserver_helpers::render_location_image(product, 'logo', 'thumbnail')" />
+        </div>
+        <h1 tal:content="product/title" tal:attributes="property product/rdfmapper/title">The Midgard Project</h1>
+        
+        <div class="tagline" tal:content="structure product/abstract" tal:attributes="property product/rdfmapper/abstract">
+            Product tagline
+        </div>
+    </header>
    
     <div tal:content="structure product/content" tal:attributes="property product/rdfmapper/content">
         Product description
