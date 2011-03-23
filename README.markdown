@@ -8,6 +8,11 @@ This Midgard MVC component is designed for running the [Midgard Project](http://
 You need a working Midgard2 + Midgard MVC installation. To install this website, run:
 
     $ midgardmvc install https://github.com/midgardproject/org_midgardproject_projectsite/raw/master/application.yml midgard
+    
+Note: Due to a [installer bug](https://github.com/midgardproject/midgardmvc_installer/issues/24) the above operation will abort at a point. To make it pass you now need to:
+
+    $ cd midgard
+    $ midgardmvc update
 
 Then to run the site, use:
 
