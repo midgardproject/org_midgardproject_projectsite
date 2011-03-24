@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<midgard_object xmlns="http://www.midgard-project.org/midgard_object/1.8">
+  <midgardmvc_core_node purge="no" action="updated" guid="d56c0b66553311e0a48f5ba4eebd0cc10cc1">
+    <metadata>
+      <creator></creator>
+      <created>2011-03-23 09:56:33+0000</created>
+      <revisor></revisor>
+      <revised>2011-03-24 13:39:14+0000</revised>
+      <revision>4</revision>
+      <locker></locker>
+      <locked>0001-01-01 00:00:00+0000</locked>
+      <approver></approver>
+      <approved>0001-01-01 00:00:00+0000</approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart>0001-01-01 00:00:00+0000</schedulestart>
+      <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>244</size>
+      <published>0001-01-01 00:00:00+0000</published>
+      <score>0</score>
+      <imported>0001-01-01 00:00:00+0000</imported>
+      <exported>0001-01-01 00:00:00+0000</exported>
+      <deleted>0</deleted>
+      <isapproved>0</isapproved>
+      <islocked>0</islocked>
+    </metadata>
+    <action></action>
+    <id>2</id>
+    <up>d5623172553311e0a48f5ba4eebd0cc10cc1</up>
+    <name>planet</name>
+    <title>Planet Midgard</title>
+    <content>&amp;lt;p&amp;gt;Blogs from the Midgard community&amp;lt;/p&amp;gt;</content>
+    <component>com_meego_planet</component>
+    <templatedir>0</templatedir>
+  </midgardmvc_core_node>
+</midgard_object>
