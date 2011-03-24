@@ -45,6 +45,20 @@ function export_type($type, $on_execution_callback = null)
 
 function export_object(midgard_object $object)
 {
+    if (get_class($object) == 'midgard_attachment')
+    {
+        // Typecast to attachmentserver object so we get location names
+        $new = new midgardmvc_helper_attachmentserver_attachment($object->guid);
+        export_to(filepath_for_blob($new), midgard_replicator::serialize_blob($object));
+        $object = $new;
+    }
+
+    array_walk
+    (
+        $object->list_attachments(),
+        'export_object'
+    );   
+
     if ($object->metadata->imported >= $object->metadata->revised)
     {
         return;
@@ -55,8 +69,13 @@ function export_object(midgard_object $object)
         return;
     }
 
-    $serialized = midgard_replicator::serialize($object);
-    $filepath = filepath_for_object($object);
+    export_to(filepath_for_object($object), midgard_replicator::serialize($object));
+
+    midgard_replicator::export($object);
+}
+
+function export_to($filepath, $serialized)
+{
     if (   file_exists($filepath)
         && file_get_contents($filepath) == $serialized)
     {
@@ -66,11 +85,11 @@ function export_object(midgard_object $object)
     echo "Exporting to {$filepath}\n";
 
     file_put_contents($filepath, $serialized);
-    midgard_replicator::export($object);
+
     system('git add ' . escapeshellarg($filepath));
 }
 
-function filepath_for_object(midgard_object $object)
+function filepath_for_guid(midgard_object $object)
 {
     $export_dir = dirname(__FILE__) . '/../data/' . get_class($object);
     if (!file_exists($export_dir))
@@ -78,5 +97,15 @@ function filepath_for_object(midgard_object $object)
         mkdir($export_dir, 0777, true);
     }
     $export_dir = realpath($export_dir);
-    return $export_dir . '/' . $object->guid . '.xml';
+    return $export_dir . '/' . $object->guid;
+}
+
+function filepath_for_object(midgard_object $object)
+{
+    return filepath_for_guid($object) . '.xml';
+}
+
+function filepath_for_blob(midgard_object $object)
+{
+    return filepath_for_guid($object) . '_blob.xml';
 }
