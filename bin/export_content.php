@@ -13,9 +13,15 @@ export_type('org_midgardproject_projectsite_project');
 export_type('org_midgardproject_projectsite_product');
 export_type('org_midgardproject_projectsite_document');
 
-function export_type($type)
+function export_type($type, $on_execution_callback = null)
 {
     $q = new midgard_query_select(new midgard_query_storage($type));
+    
+    if (is_callable($on_execution_callback))
+    {
+        $q->connect('execution-start', $on_execution_callback);
+    }
+    
     $q->execute();
    
     array_walk
