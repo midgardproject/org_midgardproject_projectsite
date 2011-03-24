@@ -36,9 +36,10 @@ function import_type($type)
 
 function import_file($type, $guid, $path)
 {
-    $new_objects = midgard_replicator::unserialize(file_get_contents($path));
+    $new_objects = midgard_replicator::unserialize(file_get_contents($path), true);
     if (empty($new_objects))
     {
+        echo midgard_connection::get_instance()->get_error_string() . "\n";
         return;
     }
     $new_object = $new_objects[0];
@@ -56,8 +57,13 @@ function import_file($type, $guid, $path)
         // Ignore
     }
    
-    echo "importing to " . get_class($new_object) . " {$new_object->guid}\n";
-    midgard_replicator::import_object($new_object, true);
+
+    if (!midgard_replicator::import_object($new_object))
+    {
+        echo midgard_connection::get_instance()->get_error_string() . "\n";
+        return;
+    }
+    echo "Imported to " . get_class($new_object) . " {$new_object->guid}\n";
 }
 
 function filepath_for_type($type)
