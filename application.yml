@@ -15,11 +15,6 @@ nodes:
     title: The Midgard Project
     content: <p>The Midgard Project is...</p>
     component: org_midgardproject_projectsite
-    children:
-        planet:
-            title: Planet Midgard
-            content: <p>Blogs from the Midgard community</p>
-            component: com_meego_planet
 attachmentserver_variants:
     smallthumbnail:
         scale:
