@@ -15,6 +15,7 @@ nodes:
     title: The Midgard Project
     content: <p>The Midgard Project is...</p>
     component: org_midgardproject_projectsite
+    guid: d5623172553311e0a48f5ba4eebd0cc10cc1
 attachmentserver_variants:
     smallthumbnail:
         scale:
