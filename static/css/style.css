@@ -69,12 +69,6 @@ header{
 	margin-left: 10%;
 	margin-right: 10%;
 }
-aside{
-	display: block;
-	width: 20%;
-	max-width: 216px;
-	float: right;
-}
 article{
 	display: block;
 	line-height: 1.2;
@@ -154,9 +148,6 @@ article h1{
     font-size: 20pt;
 	margin-bottom: 10px;
 }
-article section {
-	width: 78%;
-}
 article p{
 	margin-bottom: 10px;
 }
@@ -220,16 +211,6 @@ article .iconmenu ul.icons li a.source{	background-image: url(../images/menu_sou
 
 article .iconmenu .content{
 	display: none;
-}
-/*---------------------------------------------------*/
-.sidebox{
-	background: url(../images/bg_sidebox.png) no-repeat top;
-	padding-top: 20px;
-	line-height: 1.2;
-}
-.sidebox .wrapper{
-	background: url(../images/bg_sidebox.png) no-repeat bottom;
-	padding: 0 20px 20px 20px;	
 }
 /*---------------------------------------------------*/
 .newslist ul{

@@ -1,3 +1,20 @@
 article section {
     margin-bottom: 1.5em;
+	width: 78%;
+}
+/*---------------------------------------------------*/
+.sidebox{
+	background: url(../images/bg_sidebox.png) no-repeat top;
+	padding-top: 20px;
+	line-height: 1.2;
+}
+.sidebox .wrapper{
+	background: url(../images/bg_sidebox.png) no-repeat bottom;
+	padding: 0 20px 20px 20px;	
+}
+aside{
+	display: block;
+	width: 20%;
+	max-width: 216px;
+	float: right;
 }
