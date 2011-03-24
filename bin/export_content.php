@@ -12,6 +12,18 @@ $mvc = midgardmvc_core::get_instance("{$basedir}/application.yml");
 export_type('org_midgardproject_projectsite_project');
 export_type('org_midgardproject_projectsite_product');
 export_type('org_midgardproject_projectsite_document');
+export_type('midgardmvc_core_node', function($q)
+{
+    $q->set_constraint
+    (
+        new midgard_query_constraint
+        (
+            new midgard_query_property('guid'),
+            '<>',
+            new midgard_query_value(midgardmvc_core::get_instance()->hierarchy->get_root_node()->get_object()->guid)
+        )
+    );
+});
 
 function export_type($type, $on_execution_callback = null)
 {
