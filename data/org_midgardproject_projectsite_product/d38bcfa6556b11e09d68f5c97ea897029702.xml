@@ -5,8 +5,8 @@
       <creator>f6b665f1984503790ed91f39b11b5392</creator>
       <created>2011-03-23 16:37:22+0000</created>
       <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
-      <revised>2011-03-23 22:05:29+0000</revised>
-      <revision>4</revision>
+      <revised>2011-03-24 10:03:15+0000</revised>
+      <revision>5</revision>
       <locker></locker>
       <locked>0001-01-01 00:00:00+0000</locked>
       <approver></approver>
@@ -32,6 +32,6 @@
     <title>Midgard1</title>
     <category>contentrepository</category>
     <abstract>Web Content Repository for PHP</abstract>
-    <content>&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Midgard1 8.09 &amp;lt;i&amp;gt;Ragnaroek LTS&amp;lt;/i&amp;gt; is a Long Term Support version of Midgard1 for which bug fixes and minor feature improvements will be supplied by the Midgard community until October 2013. It is recommended that all Midgard1 users upgrade their installations to the Midgard 8.09 series for stability, performance and maintainance reasons. Upgrade from &amp;lt;a href="/midcom/"&amp;gt;MidCOM&amp;lt;/a&amp;gt; 2.8 installations running with PHP5 has been made as seamless as possible.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;The version is targeted to ease transition from web services using the deprecated Midgard1 APIs to the new &amp;lt;a href="/midgard2/"&amp;gt;Midgard2&amp;lt;/a&amp;gt; architecture. Because of this, the Ragnaroek series provides both API versions. This means that the release can be used to run both Midgard1 applications like the &amp;lt;a href="/midcom/"&amp;gt;MidCOM&amp;lt;/a&amp;gt; component framework and &amp;lt;a href="/openpsa/"&amp;gt;OpenPSA&amp;lt;/a&amp;gt;, and Midgard2 applications like &amp;lt;a href="/midgardmvc/"&amp;gt;Midgard MVC&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;</content>
+    <content>&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Midgard1 8.09 &amp;lt;i&amp;gt;Ragnaroek LTS&amp;lt;/i&amp;gt; is a Long Term Support version of Midgard1 for which bug fixes and minor feature improvements will be supplied by the Midgard community until October 2012. It is recommended that all Midgard1 users upgrade their installations to the Midgard 8.09 series for stability, performance and maintainance reasons. Upgrade from &amp;lt;a href="/midcom/"&amp;gt;MidCOM&amp;lt;/a&amp;gt; 2.8 installations running with PHP5 has been made as seamless as possible.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;The version is targeted to ease transition from web services using the deprecated Midgard1 APIs to the new &amp;lt;a href="/midgard2/"&amp;gt;Midgard2&amp;lt;/a&amp;gt; architecture. Because of this, the Ragnaroek series provides both API versions. This means that the release can be used to run both Midgard1 applications like the &amp;lt;a href="/midcom/"&amp;gt;MidCOM&amp;lt;/a&amp;gt; component framework and &amp;lt;a href="/openpsa/"&amp;gt;OpenPSA&amp;lt;/a&amp;gt;, and Midgard2 applications like &amp;lt;a href="/midgardmvc/"&amp;gt;Midgard MVC&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;</content>
   </org_midgardproject_projectsite_product>
 </midgard_object>
