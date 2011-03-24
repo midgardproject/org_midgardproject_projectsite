@@ -25,4 +25,12 @@
     <section tal:content="structure project/content" tal:attributes="property project/rdfmapper/content">
         More information about the project
     </section>
+    
+    <nav>
+        <ol tal:condition="exists: current_component/subnodes" typeof="http://purl.org/dc/dcmitype/Collection" mgd:baseurl="/">
+            <li tal:repeat="subnode current_component/subnodes" tal:attributes="about string:urn:uuid:${php:subnode.get_object().guid}; typeof string:mgd:${php:get_class(subnode.get_object())}">
+                <a tal:attributes="href php:subnode.get_path()" tal:content="subnode/title" property="mgd:title">Subfolder</a>
+            </li>
+        </ol>
+    </nav>
 </article>

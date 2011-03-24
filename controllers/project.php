@@ -26,6 +26,8 @@ class org_midgardproject_projectsite_controllers_project
             },
             array_keys(midgardmvc_core::get_instance()->configuration->product_categories)
         );
+        
+        $this->data['subnodes'] = $this->request->get_node()->get_child_nodes();
 
         midgardmvc_core::get_instance()->head->add_link
         (
