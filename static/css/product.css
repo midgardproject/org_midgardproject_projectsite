@@ -4,6 +4,10 @@ article section {
 	display: block;
 }
 
+article section section {
+    margin-right: 0px;
+}
+
 article section img {
     display: block;
     margin: 0.3em;
@@ -24,4 +28,38 @@ aside{
 	display: block;
 	width: 216px;
 	float: right;
+}
+/*----------------------------------------------------*/
+#download ul.icons{
+	list-style: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+}
+#download ul.icons li{
+	margin-right: 24px;
+	float: left;
+}
+#download ul.icons li a{
+	background: no-repeat top;
+	background-image: url(../images/menu_source.png);
+	width: 82px;
+	height: 82px;
+	display: block;
+	text-decoration: none;
+	text-indent: -10000px;
+}
+#download ul.icons li a:hover,
+#download ul.icons li a.active{
+	background-position: bottom;
+}
+#download ul.icons li a.windows{	background-image: url(../images/menu_windows.png);	}
+#download ul.icons li a.ubuntu{	background-image: url(../images/menu_ubuntu.png);	}
+#download ul.icons li a.debian{	background-image: url(../images/menu_debian.png);	}
+#download ul.icons li a.osx{	background-image: url(../images/menu_osx.png);	}
+#download ul.icons li a.opensuse{	background-image: url(../images/menu_suse.png);	}
+
+#download .content section {
+	display: none;
 }

@@ -175,43 +175,7 @@ article .tabs{
 	margin-bottom: 10px;
 	font-size: 11px;
 }
-article .iconmenu{
-	padding: 20px 0;
-}
 
-article .iconmenu ul.icons{
-	list-style: none;
-	margin: 0 0 20px 0;
-	padding: 0;
-	width: 100%;
-	overflow: hidden;
-}
-article .iconmenu ul.icons li{
-	margin-right: 24px;
-	float: left;
-}
-article .iconmenu ul.icons li a{
-	background: no-repeat top;
-	width: 82px;
-	height: 82px;
-	display: block;
-	text-decoration: none;
-	text-indent: -10000px;
-}
-article .iconmenu ul.icons li a:hover,
-article .iconmenu ul.icons li a.active{
-	background-position: bottom;
-}
-article .iconmenu ul.icons li a.windows{	background-image: url(../images/menu_windows.png);	}
-article .iconmenu ul.icons li a.ubuntu{	background-image: url(../images/menu_ubuntu.png);	}
-article .iconmenu ul.icons li a.debian{	background-image: url(../images/menu_debian.png);	}
-article .iconmenu ul.icons li a.osx{	background-image: url(../images/menu_osx.png);	}
-article .iconmenu ul.icons li a.suse{	background-image: url(../images/menu_suse.png);	}
-article .iconmenu ul.icons li a.source{	background-image: url(../images/menu_source.png);	}
-
-article .iconmenu .content{
-	display: none;
-}
 /*---------------------------------------------------*/
 .newslist ul{
 	list-style: none;

@@ -28,6 +28,12 @@ class org_midgardproject_projectsite_injector
             'action-create',
             'org_midgardproject_projectsite_injector::check_product'
         );
+        midgard_object_class::connect_default
+        (
+            'org_midgardproject_projectsite_download',
+            'action-create',
+            'org_midgardproject_projectsite_injector::check_product'
+        );
         $connected = true;
     }
 
@@ -59,8 +65,13 @@ class org_midgardproject_projectsite_injector
         $product->category = $args[0];
     }
     
-    public static function check_product(org_midgardproject_projectsite_document $document)
+    public static function check_product(midgard_object $document)
     {
+        if (!$document->name)
+        {
+            $document->name = midgardmvc_helper_urlize::string($document->title);
+        }
+
         if ($document->product)
         {
             return;

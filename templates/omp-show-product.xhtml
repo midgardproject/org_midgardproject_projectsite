@@ -7,6 +7,9 @@
         <div class="sidebox linklist">
             <div class="wrapper">
                 <ul>
+                    <li tal:condition="current_component/downloads">
+                        <a href="#download">Downloads</a>
+                    </li>
                     <li tal:repeat="document current_component/documentation">
                         <a tal:attributes="href string:#${document/guid}" tal:content="document/title">Usage</a>
                     </li>
@@ -14,6 +17,24 @@
             </div>
         </div>
     </aside>
+
+    <section id="download" tal:condition="php:current_component['downloads'].count()">
+        <h2>Downloads</h2>
+        <ul class="icons">
+            <li tal:repeat="download current_component/downloads" tal:attributes="about download/rdfmapper/about; typeof download/rdfmapper/typeof">
+                <a tal:content="download/title" tal:attributes="href string:#${download/name}; class download/name">Debian</a>
+            </li>
+        </ul>
+        
+        <div class="content" tal:attributes="typeof current_component/downloads/typeof; mgd:baseurl request/uri">
+            <section tal:repeat="download current_component/downloads" tal:attributes="about download/rdfmapper/about; typeof download/rdfmapper/typeof; id download/name">
+                <h2 tal:attributes="property download/rdfmapper/title" tal:content="download/title">Debian</h2>
+                <div tal:attributes="property download/rdfmapper/content" tal:content="structure download/content">
+                    <pre># apt-get install libmidgard2</pre>
+                </div>
+            </section>
+        </div>
+    </section>
 
     <div tal:attributes="typeof current_component/documentation/typeof; mgd:baseurl request/uri">
         <section tal:repeat="document current_component/documentation" tal:attributes="about document/rdfmapper/about; typeof document/rdfmapper/typeof; id document/guid">

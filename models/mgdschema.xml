@@ -57,6 +57,7 @@
         <property name="product" type="unsigned integer" link="org_midgardproject_projectsite_product:id" parentfield="product">
             <property>foaf:primaryTopic</property>
         </property>
+        <property name="name" type="string" index="yes" />
         <property name="title" type="string">
             <property>dcterms:title</property>
         </property>
@@ -65,6 +66,16 @@
             <contenttype>html</contenttype>
         </property>
     </type>
+
+    <type name="org_midgardproject_projectsite_download" table="org_midgardproject_projectsite_download" parent="org_midgardproject_projectsite_product">
+       <property name="id" type="unsigned integer" primaryfield="id">
+            <description>Local non-replication-safe database identifier</description>
+        </property>
+        <property name="product" type="unsigned integer" link="org_midgardproject_projectsite_product:id" parentfield="product" />
+        <property name="name" type="string" index="yes" />
+        <property name="title" type="string" />
+        <property name="content" type="text">
+            <contenttype>html</contenttype>
+        </property>
+    </type>
 </Schema>
-
-
