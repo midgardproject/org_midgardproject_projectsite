@@ -1,0 +1,24 @@
+document.write('<script type="text/javascript" src="/midgardmvc-static/org_midgardproject_projectsite/js/shjs/sh_main.min.js"></script>');
+document.write('<script type="text/javascript" src="/midgardmvc-static/org_midgardproject_projectsite/js/shjs/sh_php.min.js"></script>');
+document.write('<link rel="stylesheet" href="/midgardmvc-static/org_midgardproject_projectsite/js/shjs/sh_zenburn.min.css">');
+
+jQuery(document).ready(function() {
+    jQuery('pre').each(function() {
+        var content = jQuery(this).text();
+        if (content.substr(0, 5) === '<?php') {
+            jQuery(this).addClass('sh_php');
+            return true;
+        }
+        
+        if (content.indexOf('tal:') !== -1) {
+            jQuery(this).addClass('sh_html');
+            return true;
+        }
+
+        if (content.indexOf('<pro') !== -1) {
+            jQuery(this).addClass('sh_xml');
+            return true;
+        }
+    });
+    sh_highlightDocument('/midgardmvc-static/org_midgardproject_projectsite/js/shjs/', '.min.js');
+});

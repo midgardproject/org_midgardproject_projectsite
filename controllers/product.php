@@ -25,6 +25,7 @@ class org_midgardproject_projectsite_controllers_product
         );
         midgardmvc_core::get_instance()->head->enable_jquery();
         midgardmvc_core::get_instance()->head->add_jsfile(MIDGARDMVC_STATIC_URL . '/org_midgardproject_projectsite/js/menu.js');
+        midgardmvc_core::get_instance()->head->add_jsfile(MIDGARDMVC_STATIC_URL . '/org_midgardproject_projectsite/js/highlight.js');
     }
     
     public static function get_product_by_name($name)

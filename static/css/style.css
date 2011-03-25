@@ -158,7 +158,8 @@ article blockquote{
 	font-size: 12px;
 }
 article pre{
-	background: #BABDB6;
+    background-color: #3f3f3f;
+    color: #dcdccc;
 	margin: 0 0 10px 0;
 	padding: 15px 20px;
 	font-size: 12px;
