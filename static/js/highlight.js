@@ -24,7 +24,8 @@ jQuery(document).ready(function() {
             return true;
         }
 
-        if (content.indexOf('<pro') !== -1) {
+        if (content.indexOf('<pro') !== -1 ||
+            content.indexOf('<type') !== -1) {
             jQuery(this).addClass('sh_xml');
             return true;
         }
