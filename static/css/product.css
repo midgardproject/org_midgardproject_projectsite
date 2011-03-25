@@ -2,6 +2,13 @@ article section {
     margin-bottom: 1.5em;
 	width: 78%;
 }
+
+article section img {
+    display: block;
+    margin: 0.3em;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*---------------------------------------------------*/
 .sidebox{
 	background: url(../images/bg_sidebox.png) no-repeat top;
