@@ -4,9 +4,9 @@
     <metadata>
       <creator>f6b665f1984503790ed91f39b11b5392</creator>
       <created>2011-03-23 21:08:44+0000</created>
-      <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
-      <revised>2011-03-25 13:45:19+0000</revised>
-      <revision>9</revision>
+      <revisor></revisor>
+      <revised>2011-03-25 14:49:49+0000</revised>
+      <revision>10</revision>
       <locker></locker>
       <locked>0001-01-01 00:00:00+0000</locked>
       <approver></approver>
@@ -17,7 +17,7 @@
       <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
       <hidden>0</hidden>
       <navnoentry>0</navnoentry>
-      <size>7637</size>
+      <size>7628</size>
       <published>0001-01-01 00:00:00+0000</published>
       <score>0</score>
       <imported>0001-01-01 00:00:00+0000</imported>
@@ -29,7 +29,7 @@
     <action></action>
     <id>8</id>
     <product>4e20cbcc556711e0bf9f557e78066d206d20</product>
-    <name></name>
+    <name>midgard_content_schemas</name>
     <title>Midgard content schemas</title>
     <content>&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Midgard2 objects are defined using MgdSchema XML configuration files. Their classes are automatically registered for usage in applications and are described using MgdSchema file attributes and properties.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;h3&amp;gt;Naming Conventions&amp;lt;/h3&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Due to language binding limitations, type names should be in lowercase and use underscores as word separators. You should follow this convention if you want to define schema types for midgard-java and midgard-php applications.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Temporary files with '.' or '#' prefixes, or with a '#' suffix will be ignored and warning messages will be printed to the log file or directly to the terminal window.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;h3&amp;gt;Schema Structure&amp;lt;/h3&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;Here's a simple example:&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;&amp;amp;lt;?xml version="1.0" encoding="UTF-8"?&amp;amp;gt;
 &amp;amp;lt;Schema xmlns="http://www.midgard-project.org/repligard/1.4"&amp;amp;gt;

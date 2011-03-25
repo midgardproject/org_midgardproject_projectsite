@@ -4,9 +4,9 @@
     <metadata>
       <creator>f6b665f1984503790ed91f39b11b5392</creator>
       <created>2011-03-23 20:45:05+0000</created>
-      <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
-      <revised>2011-03-25 10:42:42+0000</revised>
-      <revision>14</revision>
+      <revisor></revisor>
+      <revised>2011-03-25 14:49:49+0000</revised>
+      <revision>15</revision>
       <locker></locker>
       <locked>0001-01-01 00:00:00+0000</locked>
       <approver></approver>
@@ -17,7 +17,7 @@
       <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
       <hidden>0</hidden>
       <navnoentry>0</navnoentry>
-      <size>6514</size>
+      <size>6505</size>
       <published>0001-01-01 00:00:00+0000</published>
       <score>0</score>
       <imported>0001-01-01 00:00:00+0000</imported>
@@ -29,7 +29,7 @@
     <action></action>
     <id>7</id>
     <product>6828efc6556d11e0ba8a1b516eedd3b4d3b4</product>
-    <name></name>
+    <name>interaction_components</name>
     <title>Interaction components</title>
     <content>&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;The user interaction concept implemented by Midgard Create is based on easy discoverability, and the ability to manage all content shown on a web page.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Midgard Create user interface is constructed dynamically based on introspecting the HTML content of a page. The actual Midgard Create is loaded via a JavaScript include, after which all other interaction components appear as needed.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;h3&amp;gt;Edit mode&amp;lt;/h3&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;&amp;lt;img src="/mgd:attachment/37222e1256b511e088195f4d3d29846f846f/view/midgardcreate-just-edit.png?1301039715893" title="midgardcreate-just-edit.png" alt="midgardcreate-just-edit.png?130103971589" /&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;When accessing a website running Midgard Create, users can either interact with the site in &amp;lt;i&amp;gt;Browse Mode&amp;lt;/i&amp;gt; or &amp;lt;i&amp;gt;Edit Mode&amp;lt;/i&amp;gt;. In Browse Mode the website behaves exactly in the same way as it does for regular users, meaning that no content is editable. However, there is a Midgard Create Toolbar available.&amp;lt;br /&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;In Edit Mode all editable content can be modified, new items can be added to collections, and images and other files can be placed on the page.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;h3&amp;gt;Toolbar&amp;lt;/h3&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;The Midgard Create toolbar is the main access point to the system. It floats on the top of the page, allowing quick access to functionality like the &amp;lt;i&amp;gt;Edit mode&amp;lt;/i&amp;gt;&amp;#xA0;and &amp;lt;i&amp;gt;Saving&amp;lt;/i&amp;gt; content, and to running workflows on particular content items.&amp;lt;br /&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;h3&amp;gt;Editables&amp;lt;/h3&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Content items shown on web pages can be made editable by the user. The editability of content items is determined by marking them up with RDFa attributes describing the content.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;A typical editable is a full web content item, for example an Article. It consists of multiple editable areas, for example Title and Content. Each of these can be edited separately. The Editables system keeps track of all user-made changes and enables users to Save them in bulk.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;The actual content editing is implemented using a HTML contentEditable managed by the &amp;lt;a href="http://aloha-editor.org/"&amp;gt;Aloha Editor&amp;lt;/a&amp;gt;. Aloha provides the typical formatting options needed for web content, like marking a part of text headline, or adding a table.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;To make a content item Editable it needs to be marked up with RDFa attributes describing Midgard Create how to deal with it.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;The HTML container where the item is displayed (for example, a &amp;lt;i&amp;gt;div&amp;lt;/i&amp;gt;&amp;#xA0;or &amp;lt;i&amp;gt;li&amp;lt;/i&amp;gt; element) should identify the item:&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;about&amp;lt;/b&amp;gt;: Identifier (&amp;lt;i&amp;gt;"subject"&amp;lt;/i&amp;gt;) of that particular item. Typically handled in format &amp;lt;i&amp;gt;urn:uuid:&amp;amp;lt;Midgard2 GUID&amp;amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;typeof&amp;lt;/b&amp;gt;: Type of the item, typically either &amp;lt;i&amp;gt;mgd:&amp;amp;lt;MgdSchema type name&amp;amp;gt;&amp;lt;/i&amp;gt;&amp;#xA0;or a RDF type URL&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Individual properties (&amp;lt;i&amp;gt;"predicates"&amp;lt;/i&amp;gt;) of the content item that are being displayed need also to be identified:&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;property&amp;lt;/b&amp;gt;: The property being displayed, either &amp;lt;i&amp;gt;mgd:&amp;amp;lt;property name&amp;amp;gt;&amp;lt;/i&amp;gt;&amp;#xA0;or the RDF property name&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Simple article example in HTML and RDFa:&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;pre class="sh_html sh_sourceCode"&amp;gt;&amp;amp;lt;article about="urn:uuid:b22842f81e3511e08dcec7b8cfa942754275" typeof="http://rdfs.org/sioc/ns#Post"&amp;amp;gt;&amp;#xA0;
     &amp;amp;lt;h1 property="dcterms:title"&amp;amp;gt;Article title&amp;amp;lt;/h1&amp;amp;gt;
