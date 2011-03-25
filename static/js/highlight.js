@@ -10,7 +10,10 @@ jQuery(document).ready(function() {
             return true;
         }
         
-        if (content.indexOf('tal:') !== -1) {
+        if (content.indexOf('tal:') !== -1 ||
+            content.indexOf('<p>') !== -1 ||
+            content.indexOf('<li>') !== -1 ||
+            content.indexOf('<img') !== -1) {
             jQuery(this).addClass('sh_html');
             return true;
         }
