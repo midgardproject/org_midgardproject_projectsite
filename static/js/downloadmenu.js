@@ -2,6 +2,7 @@ jQuery(document).ready(function() {
 
     var refreshTab = function () {
 	    jQuery('#download .content section').css('display', 'none');
+	    jQuery('#download .content section h3').css('display', 'none');
 	    jQuery(jQuery('#download .icons li a.active').attr('href')).css('display', 'block');	
 	}
 
