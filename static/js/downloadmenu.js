@@ -12,7 +12,8 @@ jQuery(document).ready(function() {
             
             refreshTab();
             
-            event.preventDefault();
+            //window.location.hash = jQuery(this).attr('href');
+            //event.preventDefault();
         });
     });
     

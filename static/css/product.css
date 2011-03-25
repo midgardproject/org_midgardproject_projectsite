@@ -63,3 +63,7 @@ aside{
 #download .content section {
 	display: none;
 }
+
+#download .content section h3 {
+	display: none;
+}

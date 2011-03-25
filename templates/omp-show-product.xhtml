@@ -28,7 +28,7 @@
         
         <div class="content" tal:attributes="typeof current_component/downloads/typeof; mgd:baseurl request/uri">
             <section tal:repeat="download current_component/downloads" tal:attributes="about download/rdfmapper/about; typeof download/rdfmapper/typeof; id download/name">
-                <h2 tal:attributes="property download/rdfmapper/title" tal:content="download/title">Debian</h2>
+                <h3 tal:attributes="property download/rdfmapper/title" tal:content="download/title">Debian</h3>
                 <div tal:attributes="property download/rdfmapper/content" tal:content="structure download/content">
                     <pre># apt-get install libmidgard2</pre>
                 </div>
