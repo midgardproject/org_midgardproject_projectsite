@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<midgard_object xmlns="http://www.midgard-project.org/midgard_object/1.8">
+  <midgardmvc_helper_attachmentserver_attachment purge="no" action="updated" guid="9ed4925256c911e096b5dfad7d69f1a4f1a4">
+    <metadata>
+      <creator>f6b665f1984503790ed91f39b11b5392</creator>
+      <created>2011-03-25 10:21:17+0000</created>
+      <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
+      <revised>2011-03-25 10:21:17+0000</revised>
+      <revision>1</revision>
+      <locker></locker>
+      <locked>0001-01-01 00:00:00+0000</locked>
+      <approver></approver>
+      <approved>0001-01-01 00:00:00+0000</approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart>0001-01-01 00:00:00+0000</schedulestart>
+      <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>3275</size>
+      <published>0001-01-01 00:00:00+0000</published>
+      <score>0</score>
+      <imported>0001-01-01 00:00:00+0000</imported>
+      <exported>0001-01-01 00:00:00+0000</exported>
+      <deleted>0</deleted>
+      <isapproved>0</isapproved>
+      <islocked>0</islocked>
+    </metadata>
+    <action></action>
+    <parentguid>9b2153f256c911e096b5dfad7d69f1a4f1a4</parentguid>
+    <mimetype>image/png</mimetype>
+    <location>9/E/9ed93d7a-56c9-11e0-96b5-dfad7d69f1a4</location>
+    <title>midgard2_white.png</title>
+    <name>thumbnail</name>
+    <id>77</id>
+    <locationname></locationname>
+  </midgardmvc_helper_attachmentserver_attachment>
+</midgard_object>
