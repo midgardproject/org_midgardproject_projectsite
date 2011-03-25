@@ -11,17 +11,12 @@ jQuery(document).ready(function() {
             jQuery(this).addClass('active');
             
             refreshTab();
-            
-            //window.location.hash = jQuery(this).attr('href');
-            //event.preventDefault();
         });
     });
     
     if (window.location.hash)
     {
         jQuery('#download .icons li a[href="' + window.location.hash + '"]').addClass('active');
-    } else {
-        jQuery('#download .icons li a').eq(0).addClass('active');
     }
 
     refreshTab();
