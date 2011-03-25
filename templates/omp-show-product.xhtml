@@ -11,7 +11,7 @@
                         <a href="#download">Downloads</a>
                     </li>
                     <li tal:repeat="document current_component/documentation">
-                        <a tal:attributes="href string:#${document/guid}" tal:content="document/title">Usage</a>
+                        <a tal:attributes="href string:#${document/name}" tal:content="document/title">Usage</a>
                     </li>
                 </ul>
             </div>
@@ -37,7 +37,7 @@
     </section>
 
     <div tal:attributes="typeof current_component/documentation/typeof; mgd:baseurl request/uri">
-        <section tal:repeat="document current_component/documentation" tal:attributes="about document/rdfmapper/about; typeof document/rdfmapper/typeof; id document/guid">
+        <section tal:repeat="document current_component/documentation" tal:attributes="about document/rdfmapper/about; typeof document/rdfmapper/typeof; id document/name">
             <h1 tal:content="document/title" tal:attributes="property document/rdfmapper/title">Usage</h1>
             <div tal:content="structure document/content" tal:attributes="property document/rdfmapper/content">Say &lt;?php echo "hello world"; ?&gt;</div>
         </section>
