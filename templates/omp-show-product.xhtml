@@ -21,7 +21,7 @@
     <section id="download" tal:condition="php:current_component['downloads'].count()">
         <h2>Downloads</h2>
         <ul class="icons">
-            <li tal:repeat="download current_component/downloads" tal:attributes="about download/rdfmapper/about; typeof download/rdfmapper/typeof">
+            <li tal:repeat="download current_component/downloads">
                 <a tal:content="download/title" tal:attributes="href string:#${download/name}; class download/name">Debian</a>
             </li>
         </ul>

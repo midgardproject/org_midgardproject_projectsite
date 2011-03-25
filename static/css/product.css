@@ -59,7 +59,3 @@ aside{
 #download ul.icons li a.debian{	background-image: url(../images/menu_debian.png);	}
 #download ul.icons li a.osx{	background-image: url(../images/menu_osx.png);	}
 #download ul.icons li a.opensuse{	background-image: url(../images/menu_suse.png);	}
-
-#download .content section {
-	display: none;
-}

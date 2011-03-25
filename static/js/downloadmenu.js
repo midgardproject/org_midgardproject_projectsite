@@ -1,5 +1,4 @@
 jQuery(document).ready(function() {
-
     var refreshTab = function () {
 	    jQuery('#download .content section').css('display', 'none');
 	    jQuery('#download .content section h3').css('display', 'none');
