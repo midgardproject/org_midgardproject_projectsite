@@ -33,3 +33,7 @@ attachmentserver_variants:
         scale:
             width: 380
             height: 380
+    large:
+        scale:
+            width: 600
+            height: 600
