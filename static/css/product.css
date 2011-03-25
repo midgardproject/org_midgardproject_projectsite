@@ -1,6 +1,7 @@
 article section {
     margin-bottom: 1.5em;
-	width: 78%;
+    margin-right: 224px;
+	display: block;
 }
 
 article section img {
