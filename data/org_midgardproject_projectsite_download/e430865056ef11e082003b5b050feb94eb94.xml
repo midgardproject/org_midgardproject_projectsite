@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<midgard_object xmlns="http://www.midgard-project.org/midgard_object/1.8">
+  <org_midgardproject_projectsite_download purge="no" action="created" guid="e430865056ef11e082003b5b050feb94eb94">
+    <metadata>
+      <creator>f6b665f1984503790ed91f39b11b5392</creator>
+      <created>2011-03-25 14:55:14+0000</created>
+      <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
+      <revised>2011-03-25 14:55:14+0000</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked>0001-01-01 00:00:00+0000</locked>
+      <approver></approver>
+      <approved>0001-01-01 00:00:00+0000</approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart>0001-01-01 00:00:00+0000</schedulestart>
+      <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>643</size>
+      <published>0001-01-01 00:00:00+0000</published>
+      <score>0</score>
+      <imported>0001-01-01 00:00:00+0000</imported>
+      <exported>0001-01-01 00:00:00+0000</exported>
+      <deleted>0</deleted>
+      <isapproved>0</isapproved>
+      <islocked>0</islocked>
+    </metadata>
+    <action></action>
+    <id>6</id>
+    <product>d38bcfa6556b11e09d68f5c97ea897029702</product>
+    <name>ubuntu</name>
+    <title>Ubuntu</title>
+    <content>&amp;lt;div&amp;gt;On Ubuntu Lucid (10.04 LTS), run the following command:&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;sudo add-apt-repository "deb http://download.opensuse.org/repositories/home:/midgardproject:/ragnaroek/xUbuntu_10.04/ ./"&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;Then just install Midgard1 via &amp;lt;i&amp;gt;apt-get update&amp;lt;/i&amp;gt; and &amp;lt;i&amp;gt;apt-get install midgard-data&amp;lt;/i&amp;gt;. After this completes you can set up the system with &amp;lt;a href="#datagard"&amp;gt;Datagard&amp;lt;/a&amp;gt;.&amp;lt;/div&amp;gt;</content>
+  </org_midgardproject_projectsite_download>
+</midgard_object>
