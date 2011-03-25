@@ -5,8 +5,8 @@
       <creator>f6b665f1984503790ed91f39b11b5392</creator>
       <created>2011-03-25 14:54:13+0000</created>
       <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
-      <revised>2011-03-25 14:55:14+0000</revised>
-      <revision>1</revision>
+      <revised>2011-03-25 15:07:52+0000</revised>
+      <revision>2</revision>
       <locker></locker>
       <locked>0001-01-01 00:00:00+0000</locked>
       <approver></approver>
@@ -17,7 +17,7 @@
       <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
       <hidden>0</hidden>
       <navnoentry>0</navnoentry>
-      <size>830</size>
+      <size>851</size>
       <published>0001-01-01 00:00:00+0000</published>
       <score>0</score>
       <imported>0001-01-01 00:00:00+0000</imported>
@@ -31,6 +31,6 @@
     <product>d38bcfa6556b11e09d68f5c97ea897029702</product>
     <name>debian</name>
     <title>Debian</title>
-    <content>&amp;lt;div&amp;gt;On Debian Squeeze, add the following to your &amp;lt;i&amp;gt;/etc/apt/sources.list&amp;lt;/i&amp;gt;:&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;deb http://download.opensuse.org/repositories/home:/midgardproject:/ragnaroek/Debian_6.0/ ./&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;On Debian Lenny, add the following to your &amp;lt;i&amp;gt;/etc/apt/sources.list&amp;lt;/i&amp;gt;:&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;deb http://download.opensuse.org/repositories/home:/midgardproject:/ragnaroek/Debian_5.0/ ./&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;Then just install Midgard1 via &amp;lt;i&amp;gt;apt-get update&amp;lt;/i&amp;gt; and &amp;lt;i&amp;gt;apt-get install midgard-data&amp;lt;/i&amp;gt;. After this completes you can set up the system with &amp;lt;a href="#datagard"&amp;gt;Datagard&amp;lt;/a&amp;gt;.&amp;lt;/div&amp;gt;</content>
+    <content>&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;On Debian Squeeze, add the following to your &amp;lt;i&amp;gt;/etc/apt/sources.list&amp;lt;/i&amp;gt;:&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;deb http://download.opensuse.org/repositories/home:/midgardproject:/ragnaroek/Debian_6.0/ ./&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;On Debian Lenny, add the following to your &amp;lt;i&amp;gt;/etc/apt/sources.list&amp;lt;/i&amp;gt;:&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;deb http://download.opensuse.org/repositories/home:/midgardproject:/ragnaroek/Debian_5.0/ ./&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Then just install Midgard1 via &amp;lt;i&amp;gt;apt-get update&amp;lt;/i&amp;gt; and &amp;lt;i&amp;gt;apt-get install midgard-data&amp;lt;/i&amp;gt;. After this completes you can set up the system with &amp;lt;a href="#datagard"&amp;gt;Datagard&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;</content>
   </org_midgardproject_projectsite_download>
 </midgard_object>
