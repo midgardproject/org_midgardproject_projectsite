@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<midgard_object xmlns="http://www.midgard-project.org/midgard_object/1.8">
+  <org_midgardproject_projectsite_download purge="no" action="updated" guid="8ef2b44e56f711e0ab3bb59abbe38f138f13">
+    <metadata>
+      <creator>f6b665f1984503790ed91f39b11b5392</creator>
+      <created>2011-03-25 15:50:07+0000</created>
+      <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
+      <revised>2011-03-25 15:57:47+0000</revised>
+      <revision>1</revision>
+      <locker></locker>
+      <locked>0001-01-01 00:00:00+0000</locked>
+      <approver></approver>
+      <approved>0001-01-01 00:00:00+0000</approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart>0001-01-01 00:00:00+0000</schedulestart>
+      <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>1300</size>
+      <published>0001-01-01 00:00:00+0000</published>
+      <score>0</score>
+      <imported>0001-01-01 00:00:00+0000</imported>
+      <exported>0001-01-01 00:00:00+0000</exported>
+      <deleted>0</deleted>
+      <isapproved>0</isapproved>
+      <islocked>0</islocked>
+    </metadata>
+    <action></action>
+    <id>7</id>
+    <product>4e20cbcc556711e0bf9f557e78066d206d20</product>
+    <name>ubuntu</name>
+    <title>Ubuntu</title>
+    <content>&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;On &amp;lt;b&amp;gt;Ubuntu Lucid (10.04 LTS)&amp;lt;/b&amp;gt;, run the following command:&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;pre&amp;gt;$ sudo add-apt-repository "deb http://download.opensuse.org/repositories/home:/midgardproject:/ratatoskr/xUbuntu_10.04/ ./"&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;Then run &amp;lt;i&amp;gt;apt-get update&amp;lt;/i&amp;gt; and &amp;lt;i&amp;gt;apt-get install libmidgard2-2010&amp;lt;/i&amp;gt;.&amp;#xA0;To use Midgard2 with&amp;#xA0;&amp;lt;a href="http://live.gnome.org/GObjectIntrospection/Users"&amp;gt;GObject Introspection&amp;lt;/a&amp;gt;&amp;#xA0;in any language, install the library with&amp;#xA0;&amp;lt;i&amp;gt;apt-get install gir1.0-midgard2&amp;lt;/i&amp;gt;. For PHP, install the extension via&amp;#xA0;apt-get install &amp;lt;i&amp;gt;php5-midgard2&amp;lt;/i&amp;gt;.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;On &amp;lt;b&amp;gt;Ubuntu Natty (11.04)&amp;lt;/b&amp;gt; Midgard2 &amp;lt;a href="http://packages.ubuntu.com/search?keywords=midgard&amp;amp;amp;searchon=names&amp;amp;amp;suite=natty&amp;amp;amp;section=all"&amp;gt;is available&amp;lt;/a&amp;gt; in the repositories. Simply run:&amp;lt;/p&amp;gt;&amp;lt;pre&amp;gt;$ sudo apt-get install libmidgard2&amp;lt;/pre&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;p&amp;gt;To use Midgard2 with&amp;#xA0;&amp;lt;a href="http://live.gnome.org/GObjectIntrospection/Users"&amp;gt;GObject Introspection&amp;lt;/a&amp;gt;&amp;#xA0;in any language, install the library with&amp;#xA0;&amp;lt;i&amp;gt;apt-get install gir1.2-midgard2&amp;lt;/i&amp;gt;.&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt;</content>
+  </org_midgardproject_projectsite_download>
+</midgard_object>
