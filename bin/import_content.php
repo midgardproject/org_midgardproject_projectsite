@@ -12,6 +12,7 @@ $mvc = midgardmvc_core::get_instance("{$basedir}/application.yml");
 import_type('org_midgardproject_projectsite_project');
 import_type('org_midgardproject_projectsite_product');
 import_type('org_midgardproject_projectsite_document');
+import_type('org_midgardproject_projectsite_download');
 import_type('midgardmvc_core_node');
 import_type('midgardmvc_helper_attachmentserver_attachment');
 
