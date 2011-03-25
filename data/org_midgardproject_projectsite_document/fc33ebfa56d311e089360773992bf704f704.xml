@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<midgard_object xmlns="http://www.midgard-project.org/midgard_object/1.8">
+  <org_midgardproject_projectsite_document purge="no" action="created" guid="fc33ebfa56d311e089360773992bf704f704">
+    <metadata>
+      <creator>f6b665f1984503790ed91f39b11b5392</creator>
+      <created>2011-03-25 11:35:29+0000</created>
+      <revisor>f6b665f1984503790ed91f39b11b5392</revisor>
+      <revised>2011-03-25 11:35:29+0000</revised>
+      <revision>0</revision>
+      <locker></locker>
+      <locked>0001-01-01 00:00:00+0000</locked>
+      <approver></approver>
+      <approved>0001-01-01 00:00:00+0000</approved>
+      <authors></authors>
+      <owner></owner>
+      <schedulestart>0001-01-01 00:00:00+0000</schedulestart>
+      <scheduleend>0001-01-01 00:00:00+0000</scheduleend>
+      <hidden>0</hidden>
+      <navnoentry>0</navnoentry>
+      <size>1508</size>
+      <published>0001-01-01 00:00:00+0000</published>
+      <score>0</score>
+      <imported>0001-01-01 00:00:00+0000</imported>
+      <exported>0001-01-01 00:00:00+0000</exported>
+      <deleted>0</deleted>
+      <isapproved>0</isapproved>
+      <islocked>0</islocked>
+    </metadata>
+    <action></action>
+    <id>13</id>
+    <product>4e20cbcc556711e0bf9f557e78066d206d20</product>
+    <title>Workspaces</title>
+    <content>&amp;lt;p&amp;gt;Workspaces are a new feature in Midgard2 10.05.5 that adds the capability of organizing your whole content into different containers and accessing them by the workspace. This basically adds capability similar to &amp;lt;a href="http://en.wikipedia.org/wiki/Layers_(digital_image_editing)"&amp;gt;layers in image editing software&amp;lt;/a&amp;gt; like Photoshop to your content repository.&amp;lt;/p&amp;gt;&amp;lt;h3&amp;gt;Workspace tree&amp;lt;/h3&amp;gt;&amp;lt;p&amp;gt;Workspaces form a tree hierarchy. This allows easy building of display rules or workflows to a Midgard2 powered application. Here are some examples of tree structures you may use:&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;/published/draft&amp;lt;/b&amp;gt;: content in the &amp;lt;i&amp;gt;published&amp;lt;/i&amp;gt; workspace is displayed to everybody. New content is added in the &amp;lt;i&amp;gt;draft&amp;lt;/i&amp;gt; workspace and only moved to &amp;lt;i&amp;gt;published&amp;lt;/i&amp;gt; when ready&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;/en/fi&amp;lt;/b&amp;gt;: For English language users the content from workspace &amp;lt;i&amp;gt;en&amp;lt;/i&amp;gt; is shown. Workspace &amp;lt;i&amp;gt;fi&amp;lt;/i&amp;gt; extends that and allows translating content targeted at Finnish language audience&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;b&amp;gt;/public/private/group1&amp;lt;/b&amp;gt;: Content in the &amp;lt;i&amp;gt;public&amp;lt;/i&amp;gt; workspace is shown to all users. Authorized users also see content from the &amp;lt;i&amp;gt;private&amp;lt;/i&amp;gt; workspace, and members of a particular group see the content of the &amp;lt;i&amp;gt;group1&amp;lt;/i&amp;gt; workspace layered on top of the other two&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;</content>
+  </org_midgardproject_projectsite_document>
+</midgard_object>
