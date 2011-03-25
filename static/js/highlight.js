@@ -10,6 +10,12 @@ jQuery(document).ready(function() {
             return true;
         }
         
+        if (content.substr(0, 1) === '$' &&
+            content.substr(-1, 1) === ';') {
+            jQuery(this).addClass('sh_php');
+            return true;
+        }
+
         if (content.indexOf('tal:') !== -1 ||
             content.indexOf('<p>') !== -1 ||
             content.indexOf('<li>') !== -1 ||
