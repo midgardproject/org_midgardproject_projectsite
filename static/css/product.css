@@ -21,7 +21,6 @@ article section img {
 }
 aside{
 	display: block;
-	width: 20%;
-	max-width: 216px;
+	width: 216px;
 	float: right;
 }
