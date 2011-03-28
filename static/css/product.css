@@ -57,5 +57,6 @@ aside{
 #download ul.icons li a.windows{	background-image: url(../images/menu_windows.png);	}
 #download ul.icons li a.ubuntu{	background-image: url(../images/menu_ubuntu.png);	}
 #download ul.icons li a.debian{	background-image: url(../images/menu_debian.png);	}
-#download ul.icons li a.osx{	background-image: url(../images/menu_osx.png);	}
+#download ul.icons li a.osx,
+#download ul.icons li a.mac_os_x{	background-image: url(../images/menu_osx.png);	}
 #download ul.icons li a.opensuse{	background-image: url(../images/menu_suse.png);	}
