@@ -29,6 +29,7 @@ export_type('midgardmvc_core_node', function($q)
 function export_type($type, $on_execution_callback = null)
 {
     $q = new midgard_query_select(new midgard_query_storage($type));
+    $q->include_deleted(true);
     
     if (is_callable($on_execution_callback))
     {
@@ -58,7 +59,7 @@ function export_object(midgard_object $object)
     (
         $object->list_attachments(),
         'export_object'
-    );   
+    );
 
     if ($object->metadata->imported >= $object->metadata->revised)
     {
