@@ -22,7 +22,7 @@
       <score>0</score>
       <imported>0001-01-01 00:00:00+0000</imported>
       <exported>0001-01-01 00:00:00+0000</exported>
-      <deleted>0</deleted>
+      <deleted>1</deleted>
       <isapproved>0</isapproved>
       <islocked>0</islocked>
     </metadata>
