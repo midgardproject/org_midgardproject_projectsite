@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <midgard_object xmlns="http://www.midgard-project.org/midgard_object/1.8">
-  <org_midgardproject_projectsite_download purge="no" action="created" guid="1fa1432856e611e0a6344746fd012a522a52">
+  <org_midgardproject_projectsite_download purge="no" action="updated" guid="1fa1432856e611e0a6344746fd012a522a52">
     <metadata>
       <creator>f6b665f1984503790ed91f39b11b5392</creator>
       <created>2011-03-25 13:45:19+0000</created>
