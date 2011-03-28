@@ -50,6 +50,8 @@ function import_file($type, $guid, $path)
     }
     $new_object = $new_objects[0];
 
+    // FIXME: We can remove this check and the force option of import_object
+    // once https://github.com/midgardproject/midgard-core/issues/98/ is fixed.
     try
     {
         $object = new $type($guid);
@@ -63,9 +65,9 @@ function import_file($type, $guid, $path)
         // Ignore
     }
    
-    if (!midgard_replicator::import_object($new_object))
+    if (!midgard_replicator::import_object($new_object, true))
     {
-        echo midgard_connection::get_instance()->get_error_string() . "\n";
+        echo get_class($new_object) . " {$new_object->guid}: " . midgard_connection::get_instance()->get_error_string() . "\n";
         return;
     }
     echo "Imported to " . get_class($new_object) . " {$new_object->guid}\n";
