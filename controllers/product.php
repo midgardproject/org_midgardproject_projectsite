@@ -106,7 +106,7 @@ class org_midgardproject_projectsite_controllers_product
         $q->add_order
         (
             new midgard_query_property('metadata.score'), 
-            SORT_ASC
+            SORT_DESC
         );
         $q->add_order
         (
