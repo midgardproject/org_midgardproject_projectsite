@@ -103,6 +103,16 @@ class org_midgardproject_projectsite_controllers_product
         (
             new midgard_query_storage('org_midgardproject_projectsite_document')
         );
+        $q->add_order
+        (
+            new midgard_query_property('metadata.score'), 
+            SORT_ASC
+        );
+        $q->add_order
+        (
+            new midgard_query_property('metadata.created'), 
+            SORT_ASC
+        );
         $q->set_constraint
         (
             new midgard_query_constraint
