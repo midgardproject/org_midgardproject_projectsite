@@ -3,7 +3,6 @@ requires:
         - {type: github, user: bergie, repository: midgardmvc_ui_create, branch: master}
     midgardmvc_helper_urlize:
         - {type: github, user: bergie, repository: midgardmvc_helper_urlize, branch: master}
-process_injector: org_midgardproject_projectsite_injector
 template_injector: org_midgardproject_projectsite_injector
 routes:
     index:
@@ -20,3 +19,20 @@ routes:
         template_aliases:
             content: omp-show-product
             header: omp-show-product_header
+observations:
+    -
+        type: org_midgardproject_projectsite_product
+        event:
+            - action-create
+            - action-update
+        callback: org_midgardproject_projectsite_injector::create_url
+    -
+        type: org_midgardproject_projectsite_document
+        event:
+            - action-create
+        callback: org_midgardproject_projectsite_injector::check_product
+    -
+        type: org_midgardproject_projectsite_download
+        event:
+            - action-create
+        callback: org_midgardproject_projectsite_injector::check_product
