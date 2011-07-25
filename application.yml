@@ -2,6 +2,10 @@ services_dispatcher: appserv
 providers_component: midgardmvc
 providers_hierarchy: midgard2
 development_mode: true
+services_authentication_authtype: BrowserID
+services_authentication_authtypes:
+    - BrowserID
+services_authentication: midgardmvc_core_services_authentication_browserid
 components:
     midgardmvc_core:
         - {type: github, user: midgardproject, repository: midgardmvc_core, branch: master}
