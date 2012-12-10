@@ -4,6 +4,7 @@
   "require": {
     "midgard/midgardmvc-core": "dev-master",
     "midgard/midgardmvc-ui-create": "dev-legacy",
+    "midgard/midgardmvc-helper-urlize": "dev-master",
     "nemein/com-meego-planet": "dev-master",
     "aip/aip": "dev-master"
   },

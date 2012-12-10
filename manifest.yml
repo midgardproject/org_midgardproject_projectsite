@@ -1,3 +1,4 @@
+name: org_midgardproject_projectsite
 requires:
     midgardmvc_ui_create:
         - {type: github, user: bergie, repository: midgardmvc_ui_create, branch: master}
