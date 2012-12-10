@@ -29,6 +29,7 @@
         <property name="id" type="unsigned integer" primaryfield="id">
             <description>Local non-replication-safe database identifier</description>
         </property>
+        <property name="url" type="string" />
         <property name="name" type="string" index="yes" />
         <property name="title" type="string">
             <property>doap:name</property>

@@ -9,7 +9,7 @@ class org_midgardproject_projectsite_controllers_project
     public function get_project(array $args)
     {
         $this->data['project'] = $this->get_project_by_title($this->request->get_node()->get_object()->title);
-        $this->data['project']->rdfmapper = new midgardmvc_ui_create_rdfmapper($this->data['project']);
+        $this->data['project'] = new midgardmvc_ui_create_decorator($this->data['project']);
         midgardmvc_core::get_instance()->head->set_title($this->data['project']->title);
 
         $controller = $this;

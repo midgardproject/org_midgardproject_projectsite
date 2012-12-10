@@ -9,12 +9,12 @@ class org_midgardproject_projectsite_controllers_product
     public function get_product(array $args)
     {
         $this->data['product'] = self::get_product_by_name($args['product']);
-        $this->data['product']->rdfmapper = new midgardmvc_ui_create_rdfmapper($this->data['product']);
+        $this->data['product'] = new midgardmvc_ui_create_decorator($this->data['product']);
         midgardmvc_core::get_instance()->head->set_title($this->data['product']->title);
 
-        $this->data['downloads'] = $this->get_downloads($this->data['product']);
+        $this->data['downloads'] = $this->get_downloads($this->data['product']->get_object());
       
-        $this->data['documentation'] = $this->get_documentation($this->data['product']);
+        $this->data['documentation'] = $this->get_documentation($this->data['product']->get_object());
 
         midgardmvc_core::get_instance()->head->add_link
         (

@@ -5,9 +5,14 @@ $config->read_file_at_path($filepath);
 $mgd = midgard_connection::get_instance();
 $mgd->open_config($config); 
 
-$basedir = dirname(__FILE__) . '/../..';
-require("{$basedir}/midgardmvc_core/framework.php");
-$mvc = midgardmvc_core::get_instance("{$basedir}/application.yml");
+require __DIR__ . '/../vendor/midgard/midgardmvc-core/framework.php';
+
+$application_config = get_cfg_var('midgardmvc.application_config');
+if (!$application_config)
+{
+        die("PHP ini variable midgardmvc.application_config not set.\n");
+}
+$mvc = midgardmvc_core::get_instance($application_config);
 
 import_type('org_midgardproject_projectsite_project');
 import_type('org_midgardproject_projectsite_product');
@@ -80,7 +85,7 @@ function import_file($type, $guid, $path)
 
 function filepath_for_type($type)
 {
-    return realpath(dirname(__FILE__) . "/../data/{$type}");
+    return realpath(__DIR__ . "/../data/{$type}");
 }
 
 function import_blob(midgardmvc_helper_attachmentserver_attachment $attachment, $blob_path)
