@@ -1,0 +1,13 @@
+{
+  "name": "midgard/org_midgardproject_projectsite",
+  "minimum-stability": "dev",
+  "require": {
+    "midgard/midgardmvc-core": "dev-master",
+    "midgard/midgardmvc-ui-create": "dev-legacy",
+    "nemein/com-meego-planet": "dev-master",
+    "aip/aip": "dev-master"
+  },
+  "autoload": {
+    "classmap": ["."]
+  }
+}
