@@ -1,0 +1,14 @@
+---
+apps:
+  -
+    app: &MidgardMVC	
+      class: midgardmvc_appserv_runner_app
+      file: vendor/midgard/midgardmvc-core/httpd/appserv_runner_app.php
+      middlewares: {}
+servers: 
+  - 
+    max-children: 2
+    min-children: 2
+    protocol: HTTP
+    socket: "tcp://10.0.2.15:8001"
+    app: *MidgardMVC
