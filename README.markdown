@@ -3,24 +3,33 @@ Midgard Project website component
 
 This Midgard MVC component is designed for running the [Midgard Project](http://www.midgard-project.org/) website according to the new _single page for product_ approach outlined on [a midgard-dev thread](http://lists.midgard-project.org/pipermail/dev/2011-March/002883.html).
 
-## Setup
+## Setup with Vagrant
 
-You need a working Midgard2 + Midgard MVC installation. To install this website, run:
+You'll need a working [Vagrant](http://vagrantup.com/) installation. Make a local clone of this repository:
 
-    $ midgardmvc install https://github.com/midgardproject/org_midgardproject_projectsite/raw/master/application.yml midgard
-    
-Note: Due to a [installer bug](https://github.com/midgardproject/midgardmvc_installer/issues/24) the above operation will abort at a point. To make it pass you now need to:
+    $ git clone git://github.com/midgardproject/org_midgardproject_projectsite.git
 
-    $ cd midgard
-    $ midgardmvc update
+Then start Vagrant:
 
-Then to run the site, use:
+    $ cd org_midgardproject_projectsite/setup/vagrant
+    $ vagrant up
 
-    $ ./midgard/run
-    
-The site will be available in http://localhost:8001
+This will take a while as Vagrant will construct a new virtual machine with Ubuntu 12.10, Midgard, and Midgard MVC.
 
-Please note that the Planet feed aggregator functionality requires the cron setup as outlined in [com_meego_planet README](https://github.com/nemein/com_meego_planet/blob/master/README.markdown).
+The site will be available in http://localhost:8181
+
+### Restarting the server
+
+The Vagrant setup of the site uses AppServer-in-PHP for serving the pages. If you make modifications to any files, you'll have to restart the server.
+
+Make a SSH connection to the Vagrant virtual machine:
+
+    $ vagrant ssh
+
+And then just restart the service:
+
+    $ sudo service midgardmvc stop
+    $ sudo service midgardmvc start
 
 ## Working with the content
 
@@ -28,16 +37,16 @@ As this site isn't live yet, you can work on the content on your local installat
 
 To import the initial content, run:
 
-    $ cd org_midgardproject_projectsite
-    $ php -c ../php.ini bin/import_content.php
+    $ vagrant ssh
+    $ php bin/import_content.php
 
-To get started with editing, log in at http://localhost:8001/mgd:login
+To get started with editing, log in at http://localhost:8181/mgd:login
 
 This should make the [Midgard Create user interface](http://bergie.iki.fi/blog/introducing_the_midgard_create_user_interface/) available.
 
 To share your modifications, run:
 
-    $ cd org_midgardproject_projectsite
-    $ php -c ../php.ini bin/export_content.php
+    $ vagrant ssh
+    $ php bin/export_content.php
     $ git commit -m "Some new modifications"
     $ git push
